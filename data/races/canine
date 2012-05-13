@@ -1,0 +1,43 @@
+name | dog~
+description | Dogs are four legged creatures covered in fur. Dogs can range in size and
+look depending on breed. They make great pets, but a pack of wild dogs can
+be dangerous to encounter.~
+alignment | neutral~
+playable | false~
+descriptive | a canine~
+size | small~
+heightfeet | 3~
+heightinches | 0~
+undead | false~
+weight | 50~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, neck, back, tail, floating nearby~
+bodyparts | head, ear, eye, nose, tooth, tongue, whisker, paw, leg, entrails, tail, skull, bone, pelt, heart, liver, stomach, kidney, lung, hide~
+skin | white, brown, black, gray~
+eyes | green, blue, brown~
+hair | white, brown, black, gray~
+speed | 80~
+agility | 75~
+strength | 60~
+intelligence | 40~
+wisdom | 30~
+charisma | 50~
+luck | 50~
+constitution | 55~
+start_location | ~
+special_skills | ~

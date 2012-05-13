@@ -1,0 +1,13 @@
+creator | admin~
+viewable | true~
+keywords | longdescription, description~
+topics | roleplay~
+section | player~
+description | {RHelp Topic{W: longdescription / description{x
+
+{Wlongdescription <argument>{x
+     Sets your characters description to <argument>.
+
+Descriptions for characters are there for roleplaying purposes, to give
+your character a little customization. Please keep descriptions tasteful,
+and rp oriented.~

@@ -1,0 +1,8 @@
+creator | admin~
+viewable | true~
+keywords | help~
+topics | help~
+section | player~
+description | {RHelp Topic{W: help{x <argument>
+
+This command will give you help or an explaination of the <argument>.~

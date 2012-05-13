@@ -1,0 +1,15 @@
+name | playerinfo~
+capability | admin~
+description | def command(caller, args):
+    for person in player.playerlist:
+        caller.write("Player: {0:15} Host: {1:15} {{R{2}{{x".format(person.name.capitalize(),
+                                                                    person.sock.host,
+                                                                    person.sock.socket.fileno()))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

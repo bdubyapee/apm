@@ -1,0 +1,42 @@
+name | faerie~
+description | Faeries are small, forest dwelling creatures. They are good natured, as long
+as you don't mess with their home.~
+alignment | chaotic good~
+playable | false~
+descriptive | a faerie~
+size | tiny~
+heightfeet | 1~
+heightinches | 0~
+undead | false~
+weight | 10~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, eyes, face, neck, torso, waist, finger, back, floating nearby, right shoulder, right arm, right hand, right forearm, right leg, right shin, right foot, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot~
+bodyparts | head, scalp, eye, ear, nose, tongue, tooth, skull, bone, torso, arm, hand, finger, leg, foot, toe, wing, entrails, stomach, kidney, heart, liver, lung~
+skin | pale, tan, brown~
+eyes | blue, yellow, green, pink, violet~
+hair | blue, blonde, white, green, pink~
+speed | 80~
+agility | 75~
+strength | 35~
+intelligence | 65~
+wisdom | 55~
+charisma | 55~
+luck | 60~
+constitution | 30~
+start_location | ~
+special_skills | ~

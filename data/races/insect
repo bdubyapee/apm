@@ -1,0 +1,41 @@
+name | insect~
+description | Big ugly bugs. Not much fun to get caught in a swarm of em.~
+alignment | neutral~
+playable | false~
+descriptive | an insect~
+size | medium~
+heightfeet | 3~
+heightinches | 0~
+undead | false~
+weight | 300~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, neck, back, right leg, left leg~
+bodyparts | head, torso, thorax, eye, mandible, antenna, wing~
+skin | green, black, red, brown, yellow~
+eyes | black~
+hair | none~
+speed | 75~
+agility | 65~
+strength | 60~
+intelligence | 35~
+wisdom | 35~
+charisma | 35~
+luck | 55~
+constitution | 60~
+start_location | ~
+special_skills | ~

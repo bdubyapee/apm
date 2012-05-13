@@ -1,0 +1,13 @@
+creator | admin~
+viewable | true~
+keywords | movement, north, south, east, west, up, down, northeast, northwest, southeast, southwest~
+topics | movement~
+section | player~
+description | {RHelp Topic{W: movement{x
+
+Typing a direction will allow you to move to the next room in the
+specified direction if there is an exit. Certain things may prohibit
+you from moving in said direction such as a spell, a closed door, or
+the exit may be to small for you to enter. The possible directions
+you may move are: up, down, north, east, south, west, northeast,
+northwest, southeast, southwest.~

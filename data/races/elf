@@ -1,0 +1,54 @@
+name | elf~
+description | Elves live in the great forest, Mystic Woods.  An enchanted place said to
+hold many great secrets and magical beings. The elves call this place home
+living in the tops of the great trees. Elves are a magical race being very
+attuned to the mystic arts. They are highly intelligent and agile and can
+not be found in a forest unless they wish to be. Their society is based
+around nobility. Elves can be a hard people to understand as they are a
+moody people and noone really understands what the elves find offensive and
+what they like. In fact most people think elves find all things offensive
+except other elves and magic. Elves and Mazreki are mortal enemies. The
+elves view the Mazreki as being abominations and would love nothing more
+than to see the species wiped from the earth. Elves stand about 5'5" to
+6'0". They have gold, blue, green, or violet eyes. Their hair is either
+white, blonde, or a lightly hued blue. They are a wonderful source of
+magical knowledge, if one can get them to talk with them.~
+alignment | lawful good~
+playable | true~
+descriptive | an elf~
+size | medium~
+heightfeet | 5~
+heightinches | 10~
+undead | false~
+weight | 150~
+ageminimum | 40~
+agemaximum | 200~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 5~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 10~
+brholy | 0~
+brmental | 5~
+brphysical | 0~
+wearlocations | head, eyes, face, torso, back, waist, finger, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, neck, floating nearby~
+bodyparts | head, skull, bone, scalp, eye, ear, nose, tooth, tongue, torso, arm, hand, finger, leg, foot, toe, heart, liver, lung, stomach, kidney, entrails~
+skin | white, copper, brown~
+eyes | yellow, blue, green, violet~
+hair | blue, blonde, red, silver~
+speed | 60~
+agility | 60~
+strength | 50~
+intelligence | 65~
+wisdom | 45~
+charisma | 60~
+luck | 55~
+constitution | 45~
+start_location | ~
+special_skills | ~

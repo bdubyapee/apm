@@ -1,0 +1,24 @@
+name | emote~
+capability | player~
+description | def command(caller, args):
+    if args == '':
+        caller.write("See {Whelp emote{x for help with this command.")
+        return
+        
+    for person in caller.location.contents:
+        if person == caller:
+            prefix = ''
+        else:
+            prefix = '\n\r'
+            
+        name = caller.name.capitalize()
+        name = prefix + name
+        person.write("{{g{0} {1}{{x".format(name, args[:170]))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

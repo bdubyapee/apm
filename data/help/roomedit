@@ -1,0 +1,28 @@
+creator | jubelo~
+viewable | true~
+keywords | roomedit~
+topics | olc~
+section | builder~
+description | {RHelp Topic{W: Roomedit{x <vnum> / <new> (vnum) / reload
+
+{Wroomedit new (vnum):{x
+     This will start a new room with the vnum of (vnum).
+
+{Wroomedit (vnum):{x
+     This begins editing the room with vnum of (vnum).
+     
+{Wroomedit reload:{x
+     This saves and reloads the rooms in the current area.
+
+{WAvailable options while editing a room:{x
+     {Cbuilder{W:{x Sets the builders name for this room.
+     {Cname{W:{x Sets name of the room.
+     {Cvnum{W:{x Sets the vnum of the room you are editing.
+     {Cdescription{W:{x Enters you into the description editor buffer.
+     {Cpropertyvalue{W:{x Enter the property value of this room.
+     {Cflags{W:{x Enter the flags for this room.
+     {Csectortype{W:{x Enter the sector types.
+     {Cextradescriptions{W:{x Sets any extra descriptions for this room.
+
+{WWhen in the description buffer:{x
+     Please type {W.h{x while in the buffer for help regarding editing.~

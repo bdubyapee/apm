@@ -1,0 +1,53 @@
+name | human~
+description | Humans are the most populated race on Akrios. They have numerous cities and cultures. Humans personalities and beliefs differ as much as there are
+humans themselves. Humans are good and evil, selfish and caring. They are
+the most versatile race in Akrios. The humans have three major cities.
+Stormhaven, a place of religous and superstitous people that do not trust
+magic and in fact have outlawed it within the city. Whitestone Keep, once a
+garrison it is now a grand city but still acts as the guardian of the east.
+It sits near the boundaries of The Burning Sands which is a boundery between
+good and evil. Finally there is Ahaziah, filled with criminals and tyrants.
+This city is located on the west coast behind the Twilight Peaks. These
+humans survive with power which is the only thing the evil races respect,
+more out of fear than true respect. Humans live everywhere and anywhere and
+all races are wary of them for they are a short lived people and are often
+times unpredictable.~
+alignment | neutral~
+playable | true~
+descriptive | a human~
+size | medium~
+heightfeet | 6~
+heightinches | 0~
+undead | false~
+weight | 180~
+ageminimum | 20~
+agemaximum | 100~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 10~
+brphysical | 0~
+wearlocations | head, face, eyes, neck, left arm, right arm, right forearm, left forearm, torso, back, left leg, right leg, waist, right foot, left foot, left shin, right shin, left shoulder, right shoulder, finger, left hand, right hand, floating nearby~
+bodyparts | head, face, hand, leg, foot, nose, ear, scalp, torso, finger, toe, entrails, tongue, eye, skull, arm, bone, heart, liver, kidney, lung, stomach, tooth~
+skin | white, brown, black~
+eyes | brown, green, blue~
+hair | bonde, brown, black, red~
+speed | 55~
+agility | 55~
+strength | 55~
+intelligence | 55~
+wisdom | 55~
+charisma | 55~
+luck | 55~
+constitution | 55~
+start_location | ~
+special_skills | ~

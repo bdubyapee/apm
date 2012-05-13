@@ -1,0 +1,16 @@
+name | coding~
+capability | admin~
+description | def command(caller, args):
+    if caller.oocflags['coding'] == False:
+        caller.oocflags['coding'] = True
+        caller.write("You have been placed in coding mode.")
+    else:
+        caller.oocflags['coding'] = False
+        caller.write('You have been removed from coding mode.')
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

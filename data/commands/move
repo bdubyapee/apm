@@ -1,0 +1,28 @@
+name | move~
+capability | player~
+description | def command(caller, args):
+    isBuilding = hasattr(caller, 'building')
+    if args in caller.location.exits.keys():
+        exit = caller.location.exits[args]
+        if exit.destination in area.roomlist.keys():
+            if isBuilding:
+                commandhash['roomedit'].call(caller, 'done')
+                wasBuilding = True
+            newroom = area.roomByVnum(exit.destination)
+            caller.move(newroom, caller.location)
+            caller.interp("look")
+            if wasBuilding:
+                commandhash['roomedit'].call(caller, str(exit.destination))
+            
+        else:
+            caller.write("That exit appears to be broken!")
+    else:
+        caller.write("You can't go in that direction.")
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | True~
+

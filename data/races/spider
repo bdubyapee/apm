@@ -1,0 +1,43 @@
+name | spider~
+description | Spiders usually aren't a big problem, unless they are big spiders. Some are
+quite poisonous, and when you see one you can be sure there are others
+nearby.~
+alignment | neutral~
+playable | false~
+descriptive | a spider~
+size | large~
+heightfeet | 4~
+heightinches | 0~
+undead | false~
+weight | 500~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | back, neck, right leg, left leg~
+bodyparts | head, eye, leg, torso, thorax, mandible, entrails~
+skin | black, brown~
+eyes | black~
+hair | black, brown~
+speed | 70~
+agility | 70~
+strength | 55~
+intelligence | 50~
+wisdom | 45~
+charisma | 35~
+luck | 55~
+constitution | 50~
+start_location | ~
+special_skills | ~

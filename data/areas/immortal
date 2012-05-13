@@ -1,0 +1,73 @@
+Header
+name | Immortal Area~
+author | Jubelo~
+plane | material~
+hometown | human~
+difficulty | all~
+alignment | lawful good~
+locationx | 10~
+locationy | 5~
+vnum low | 1~
+vnum high | 100~
+ENDHeader
+
+Rooms
+vnum | 1~
+name | Dark Hallway~
+description | This is one dark ass hallway.~
+exits | east : 2 false 0 0 false 0 0 0 none huge false true none,south : 4 false 0 0 false 0 0 0 none huge false true none~
+flags | on fire, dead zone~
+sector type | indoor, underground, air~
+property value | rich~
+extra descriptions | ~
+$
+vnum | 2~
+name | jubelos pimp shack~
+description | This is where a very cool room description would go.~
+exits | west : 1 false 0 0 false 0 0 0 none huge false true none,north : 3 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | indoor, air~
+property value | very rich~
+extra descriptions | ~
+$
+vnum | 3~
+name | inside the cavern~
+description | You are inside of a small cavern.~
+exits | east : 5 false 0 0 false 0 0 0 none huge false true none,south : 2 false 0 0 false 75 0 0 none huge false true none~
+flags | none~
+sector type | inside~
+property value | very poor~
+extra descriptions | ~
+$
+vnum | 4~
+name | a passage in the tunnel~
+description | Dark and dank, this tunnel continues to the north.~
+exits | north : 1 false 0 0 false 0 0 0 none huge false true none~
+flags | none~
+sector type | inside~
+property value | very poor~
+extra descriptions | ~
+$
+vnum | 5~
+name | belial's cardboard box~
+description | This is a cardboard box. There's a window and a door cut in the sides.~
+exits | west : 3 false 0 0 false 0 0 0 none huge false true none~
+flags | none~
+sector type | ~
+property value | ~
+extra descriptions | ~
+$
+ENDRooms
+
+Mobs
+ENDMobs
+
+Objects
+ENDObjects
+
+Resets
+ENDResets
+
+Shops
+ENDShops
+

@@ -1,0 +1,24 @@
+name | ooc~
+capability | player~
+description | def command(caller, args):
+    if len(args.split()) == 0:
+        caller.write("Did you have something to say or not?")
+        return
+    
+    for person in player.playerlist:
+        if person == caller:
+            name = "You"
+            plural = ''
+        else:
+            name = caller.name.capitalize()
+            plural = 's'
+            name = '\n\r' + name
+        person.write("{{B{0} OOC{1}: '{2}'{{x".format(name, plural, args[:300]))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

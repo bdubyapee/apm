@@ -1,0 +1,119 @@
+name | roomedit~
+capability | builder~
+description | def command(caller, args):
+    helpstring = "Please see {Whelp roomedit{x for instructions."
+    args = args.split()
+    isBuilding = hasattr(caller, 'building')
+    isEditing = hasattr(caller, 'editing')
+
+    if len(args) == 0:
+        if isBuilding and not isEditing:
+            caller.write(caller.building.display())
+            return
+        elif not isBuilding:
+            caller.write(helpstring)
+            return
+
+    if isBuilding and isEditing:
+        done = False
+        if len(args) != 0:
+            if args[0].lower() in caller.editing.commands.keys():
+                done = caller.editing.commands[args[0].lower()](' '.join(args[1:]))
+                if done == True:
+                    caller.building.description = caller.editing.lines
+                    caller.editing.lines = None
+                    del(caller.editing)
+                    del(caller.editing_obj_name)
+                    return
+                else:
+                    if done == False:
+                        return
+                    else:
+                        caller.write(done)
+            else:
+                caller.editing.add(' '.join(args))
+        else:
+            caller.editing.add('\n\r')
+        return
+
+    if isBuilding:
+        if args[0] == 'done':
+            caller.building.area.save()
+            caller.building.builder = None
+            del(caller.building)
+            caller.prompt = caller.oldprompt
+            del(caller.oldprompt)
+        elif args[0] == 'new':
+            caller.write("You are already editing a room.")
+            return
+        elif args[0] in caller.building.commands:
+            caller.building.doAttrib(args[0], ' '.join(args[1:]))
+        else:
+            caller.write(helpstring)
+    else:
+        myvnum = 0
+        try:
+            myvnum = int(args[0])
+        except:
+            pass
+        if args[0] == 'new':
+            if len(args) != 2:
+                caller.write(helpstring)
+            else:
+                myarea = caller.location.area
+                try:
+                    myvnum = int(args[1])
+                except:
+                    caller.write("Vnum argument must be an integer")
+                    return
+                if myvnum < myarea.vnumrange[0] or myvnum > myarea.vnumrange[1]:
+                    caller.write("That vnum is not in this areas range!")
+                    return
+                if myvnum in area.roomlist.keys():
+                    caller.write("That room already exists.  Please edit it directly.")
+                    return
+                else:
+                    newroom = room.oneRoom(caller.location.area, vnum=myvnum)
+                    caller.building = newroom
+                    area.roomlist[myvnum] = newroom
+                    newroom.area.roomlist[myvnum] = newroom
+                    caller.building.builder = caller
+                    caller.write("Editing {{W{0}{{x".format(args[1]))
+                    caller.oldprompt = caller.prompt
+                    caller.prompt = "roomEdit:> "
+                    caller.location = caller.building
+        elif args[0] == 'save':
+            caller.location.area.save()
+            caller.write("Area has been saved.")
+        elif args[0] == 'delete':
+            try:
+                myvnum = int(args[1])
+            except:
+                caller.write("Vnum argument must be an integer")
+                return
+            if myvnum in area.roomlist.keys() and myvnum in caller.location.area.roomlist.keys():
+                newroom = area.roomByVnum(1)
+                for person in area.roomlist[myvnum].playerlist:
+                    util.moveFrom(person, person.location.playerlist)
+                    util.moveTo(person, newroom, newroom.playerlist)
+                area.roomlist.pop(myvnum)
+                caller.location.area.roomlist.pop(myvnum)
+                caller.write("Room {0} deleted.".format(myvnum))
+        elif myvnum in area.roomlist.keys():
+            caller.building = area.roomlist[int(args[0])]
+            caller.building.builder = caller
+            caller.write("Editing room: {{W{0}{{x.".format(args[0]))
+            caller.write(helpstring)
+            caller.oldprompt = caller.prompt
+            caller.prompt = "roomEdit:> "
+            caller.location = caller.building
+            caller.write(caller.building.display())
+        else:
+            caller.write(helpstring)
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

@@ -1,0 +1,52 @@
+name | ogre~
+description | Ogres are the brutes of the evil races. Large, strong, and stubborn they
+don't hesitate to use force, in fact it is the first thing they do in any
+situation. They are often used as bodyguards and physcial labor, and not
+always by their choice, by powerful magical races like the Mazreki. The ogre
+society is based on strength, of course, the strongest leads and must defend
+is place in the hierarchy on a regular basis. Ogres dwell in tribes on the
+western plains of Akrios, although they do have a city of sorts located in
+the southern plains where the strongest and smartest chieftains rules. Ogres
+stand 7'5" to 9'0". Their eyes are brown, blue, or green. Their hair is
+white, black, or brown. Their skin color ranges from pale to dark brown.
+Most evil races are weary when traveling with them, but prefer to take their
+chances with them rather than against them.~
+alignment | chaotic evil~
+playable | true~
+descriptive | an ogre~
+size | large~
+heightfeet | 7~
+heightinches | 5~
+undead | false~
+weight | 300~
+ageminimum | 15~
+agemaximum | 80~
+baslashing | 5~
+babashing | 5~
+bapiercing | 5~
+balashing | 5~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 5~
+brmental | 0~
+brphysical | 10~
+wearlocations | head, eyes, face, neck, torso, back, waist, finger, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, floating nearby~
+bodyparts | head, scalp, nose, ear, eye, tooth, tongue, torso, skull, bone, arm, hand, finger, leg, foot, toe, heart, stomach, kidney, entrails, liver, lung~
+skin | white, brown~
+eyes | black, brown, red~
+hair | red, blonde, black, brown~
+speed | 50~
+agility | 55~
+strength | 65~
+intelligence | 45~
+wisdom | 60~
+charisma | 45~
+luck | 55~
+constitution | 65~
+start_location | ~
+special_skills | ~

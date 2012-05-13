@@ -1,0 +1,30 @@
+name | quit~
+capability | player~
+description | def command(caller, args):
+    isBuilding = hasattr(caller, 'building')
+    isEditing = hasattr(caller, 'editing')
+
+    if isBuilding or isEditing:
+        caller.write("You must finish building first!")
+        return
+
+    caller.save()
+    caller.location.contents.remove(caller)
+    caller.sock.promptable = False
+    conn = login.Login(caller.name)
+    testsock = caller.sock
+    player.playerlist.remove(caller)
+    comm.wiznet("{0} logging out of APM.".format(caller.name))
+    del(caller)
+    conn.sock = testsock
+    conn.sock.owner = conn
+    conn.main_menu()
+    conn.interp = conn.main_menu_get_option
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

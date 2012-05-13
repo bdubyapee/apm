@@ -1,0 +1,9 @@
+creator | admin~
+viewable | true~
+keywords | areastats~
+topics | olc~
+section | immortal~
+description | {RHelp Topic{W: areastats{x
+
+This command will give that stats and a list of rooms for the area
+you are currently in.~

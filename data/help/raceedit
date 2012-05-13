@@ -1,0 +1,30 @@
+creator | admin~
+viewable | true~
+keywords | raceedit~
+topics | olc~
+section | player~
+description | {RHelp Topic{W: Raceedit{x <race> / <new> (newrace)
+
+{Wraceedit new (argument):{x
+     This will start a new race with the name of (agrument).
+
+{Wraceedit (argument):{x
+     This begins editing the race named (argument).
+
+{WAvailable options while editing a race:{x
+     {Cname{W:{x Sets name of race.
+     {Cplayable{W:{x True or False.
+     {Csize{W:{x Tiny, small, medium, large, or huge.
+     {Cundead{W:{x True or False.
+     {Calignment{W:{x Set alignment of the race.
+     {Cskin{W:{x Enter the different skin colors the race can have.
+     {Ceyes{W:{x Enter the different eye colors the race can have.
+     {Chair{W:{x Enter the different hair colors the race can have.
+     {Cspeed{W:{x Sets the base speed stat of the race.
+     {Cstats{W:{x Sets the base stats for the race. (Broken)
+     {Cwearlocations{W:{x Sets the wear locations.
+     {Cbodyparts{W:{x Sets bodyparts for race.
+     {W(Type help wearloc for a list of wear locations.){x
+
+{WWhen in the description buffer:{x
+     Please type {W.h{x while in the buffer for help regarding editing.~

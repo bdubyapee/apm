@@ -1,0 +1,11 @@
+creator | Jubelo~
+viewable | true~
+keywords | motd~
+topics | motd~
+section | player~
+description | -=-=-=-=-=-=-=-=-=-=-=- APM Message of the Day -=-=-=-=-=-=-=-=-=-=-=-
+{W12/27/10{x: Rewrote a portion of the parse_input in server.py to suck less.
+{W12/23/10{x: Fixed the displays for help and raceslist command. (Kickout Bug)
+{W03/06/10{x: Added some error checking to the promote command.
+{W01/31/10{x: Refactored code to have 'contents' unifying all objects.
+{W01/31/10{x: Moved movement code from util into livingthings module.~

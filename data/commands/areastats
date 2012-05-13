@@ -1,0 +1,17 @@
+name | areastats~
+capability | admin~
+description | def command(caller, args):
+    caller.write(caller.location.area.display())
+    caller.write("")
+    arearoomlist = caller.location.area.roomlist
+    caller.write("{RRooms in this area{x:")
+    for oneroom in arearoomlist.keys():
+        caller.write("{{W[{{B{0}{{W]{{x {1}".format(arearoomlist[oneroom].vnum, arearoomlist[oneroom].name.capitalize()))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

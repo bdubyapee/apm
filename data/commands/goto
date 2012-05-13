@@ -1,0 +1,35 @@
+name | goto~
+capability | admin~
+description | def command(caller, args):
+    args = args.split()
+    try:
+        vnum = int(args[0])
+    except:
+        vnum = None
+    newroom = None
+
+    if vnum in area.roomlist.keys():
+        newroom = area.roomByVnum(vnum)
+
+    for oneplayer in player.playerlist:
+        if oneplayer.name == args[0]:
+            newroom = oneplayer.location
+
+
+    if newroom == None:
+        caller.write("That location doesn't appear to exist!")
+    else:
+        try:
+            caller.move(newroom, caller.location)
+        except:
+            pass
+        caller.interp("look")
+        
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

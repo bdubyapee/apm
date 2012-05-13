@@ -1,0 +1,25 @@
+name | say~
+capability | player~
+description | def command(caller, args):
+    args = args.split()
+    if len(args) <= 0:
+        caller.write("Did you have something to say or not?")
+        return
+        
+    for person in caller.location.contents:
+        if person == caller:
+            name = "You"
+            plural = ''
+        else:
+            name = caller.name.capitalize()
+            plural = 's'
+            name = '\n\r' + name
+        person.write("{{c{0} say{1}, '{2}'{{x".format(name, plural, ' '.join(args[:300])))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

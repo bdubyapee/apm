@@ -1,0 +1,41 @@
+name | wolf~
+description | ~
+alignment | neutral~
+playable | false~
+descriptive | a wolf~
+size | small~
+heightfeet | 3~
+heightinches | 0~
+undead | false~
+weight | 50~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, neck, tail, back~
+bodyparts | head, ear, eye, nose, tooth, tongue, skull, bone, torso, leg, paw, tail, hide, pelt, heart, stomach, kidney, liver, lung, entrails~
+skin | pink~
+eyes | green, blue, yellow~
+hair | white, black, gray~
+speed | 80~
+agility | 70~
+strength | 65~
+intelligence | 40~
+wisdom | 35~
+charisma | 50~
+luck | 50~
+constitution | 55~
+start_location | ~
+special_skills | ~

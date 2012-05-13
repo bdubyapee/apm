@@ -1,0 +1,25 @@
+creator | admin~
+viewable | true~
+keywords | exitedit~
+topics | olc~
+section | immortal~
+description | {RHelp Topic{W: Exitedit{x <direction> / new <direction> <vnum>
+
+{Wexitedit new <direction> <vnum>{x
+     Creates a new exit in the specified (direction) from the
+     room you are currently in to the specified room of (vnum).
+
+{Wexitedit <direction>{x
+     This allows you to set the parimeters of the specified exit.
+
+{WAvailable options while in exitedit:{x
+     {CLocked{W:{x True or false.
+     {CLock difficulty{W:{x Set the difficulty for picking this lock.
+     {CKey vnum{W:{x Enter the vnum of the object that unlocks this door.
+     {CMagic locked{W:{x True or false.
+     {CMagic lock difficulty{W:{x Set the difficulty of dispelling the spell
+                            blocking this exit.
+     {CPhysical difficulty{W:{x Set the difficulty for opening the exit
+                          with physical skills like doorbash.
+     {CSize{W:{x Huge, large, medium, small, and tiny.
+     {CKeywords{W:{x Words the player can type to examine the exit.~

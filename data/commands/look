@@ -1,0 +1,70 @@
+name | look~
+capability | player~
+description | def command(caller, args):
+    if caller.location != 0 and len(args) <= 0:
+        if caller.oocflags['viewOLCdetails'] == True:
+            namepretext = "{{W[{{xVNUM: {{B{0}{{W]{{x ".format(caller.location.vnum)
+            name = "{0}{{B{1}{{x".format(namepretext, caller.location.name.capitalize())
+            theexits = []
+            for key in caller.location.exits:
+                theexits.append("{{C{0} {{W[{{xVNUM: {{B{1}{{W]{{x ".format(key, caller.location.exits[key].destination))
+            theexits = ', '.join(theexits)
+        else:
+            name = "{{B{0}{{x".format(caller.location.name.capitalize())
+            theexits = ', '.join(caller.location.exits.keys())
+
+        desc = "   {0}".format(caller.location.description)
+        people = (person for person in caller.location.contents if person.isplayer)
+        
+        if theexits == '':
+            theexits = 'none'
+
+        caller.write("{0}".format(name))
+        caller.write("{0}\n".format(desc))
+        caller.write("{{Y[{{GExits: {{C{0}{{Y]{{x".format(theexits))
+        for dude in people:
+            if dude is not caller and dude.name != '':
+                if dude.oocflags['afk'] == True:
+                    pretext = "{W[{RAFK{W]{x"
+                else:
+                    pretext = ""
+                caller.write("   {0} {1} is here.".format(pretext, dude.name.capitalize()))
+    elif len(args) > 0:
+        # Is it a room extra description?
+        if args in caller.location.extradescriptions:
+            caller.write(caller.location.extradescriptions[args])
+            return
+        # Is it a person?
+        notfound = True
+        lookingat = None
+        if args == 'self':
+            lookingat = caller
+            notfound = False
+        else:
+            for person in caller.location.contents:
+                if person.isplayer and args in person.name:
+                     lookingat = person
+                     notfound = False
+        if notfound == False:
+            if lookingat.long_description == '':
+                caller.write("They don't appear to have a description set yet.")
+            else:
+                caller.write(lookingat.long_description)
+            caller.write("")
+            caller.write("They are wearing:")
+            caller.write("Nothing yet!")
+            return
+        caller.write("You don't see anything like that.")
+        return
+    else:
+        caller.write("{xNowhere Special{x")
+        caller.write("You see nothing in any direction.")
+        caller.write("[Exits: none]")
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

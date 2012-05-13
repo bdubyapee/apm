@@ -1,0 +1,42 @@
+name | hyena~
+description | Dog like scavangers that roam in packs. They have a laugh-like bark that
+make many think of this animal as the jester of the animal kingdom.~
+alignment | neutral~
+playable | false~
+descriptive | a hyena~
+size | small~
+heightfeet | 3~
+heightinches | 6~
+undead | false~
+weight | 90~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | neck, back, tail~
+bodyparts | head, eye, ear, nose, whisker, tongue, skull, bone, torso, leg, paw, tail, pelt, hide, entrails, snout, heart, lung, liver, stomach, kidney, tooth~
+skin | black, pink~
+eyes | black, brown, yellow, green~
+hair | black, brown, yellow, white, gray~
+speed | 70~
+agility | 65~
+strength | 55~
+intelligence | 45~
+wisdom | 35~
+charisma | 30~
+luck | 50~
+constitution | 50~
+start_location | ~
+special_skills | ~

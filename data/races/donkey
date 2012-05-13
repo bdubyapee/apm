@@ -1,0 +1,42 @@
+name | donkey~
+description | Donkeys are work animals used most often to plow fields and haul loads. They
+can be used for travel, but are not as fast as horses.~
+alignment | neutral~
+playable | false~
+descriptive | a donkey~
+size | large~
+heightfeet | 6~
+heightinches | 6~
+undead | false~
+weight | 1000~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, neck, back, tail~
+bodyparts | head, ear, eye, tongue, tooth, mane, hide, leg, hoof, tail, torso, entrails, stomach, kidney, heart, liver, lung~
+skin | pink, black~
+eyes | brown, black~
+hair | black, gray, brown~
+speed | 60~
+agility | 50~
+strength | 65~
+intelligence | 45~
+wisdom | 45~
+charisma | 50~
+luck | 55~
+constitution | 70~
+start_location | ~
+special_skills | ~

@@ -1,0 +1,25 @@
+name | raceslist~
+capability | builder~
+description | def command(caller, args):
+    caller.write("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Races=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+    caller.write("")
+    retval = []
+    for arace in races.racesdict.keys():
+        retval.append(races.racesdict[arace].name.capitalize())
+    retval.sort()
+    numcols = 6
+    while (len(retval) % numcols) > 0:
+        retval.append(' ')
+    for i in range(0, len(retval), numcols):
+        output = ''
+        for l in range(0, numcols):
+            output += "{0:12}".format(retval[i + l])
+        caller.write(output)
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

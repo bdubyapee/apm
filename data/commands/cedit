@@ -1,0 +1,83 @@
+name | cedit~
+capability | admin~
+description | def command(caller, args):
+    helpstring = "Please see {Whelp cedit{x for instructions."
+    args = args.split()
+    isBuilding = hasattr(caller, 'building')
+    isEditing = hasattr(caller, 'editing')
+
+    if len(args) == 0:
+        if isBuilding and not isEditing:
+            caller.write(caller.building.display())
+            return
+        elif not isBuilding:
+            caller.write(helpstring)
+            return
+
+    if isBuilding and isEditing:
+        done = False
+        if len(args) != 0:
+            if args[0].lower() in caller.editing.commands.keys():
+                done = caller.editing.commands[args[0].lower()]\
+                                               (' '.join(args[1:]))
+                if done:
+                    caller.building.description = caller.editing.lines
+                    caller.editing.lines = ''
+                    del(caller.editing)
+                    del(caller.editing_obj_name)
+                else:
+                    if done == False:
+                        return
+                    else:
+                        caller.write(done)
+            else:
+                caller.editing.add(' '.join(args))
+        else:
+            caller.editing.add('\n')
+        return
+
+    if isBuilding:
+        if args[0] == 'done':
+            caller.building.save()
+            caller.building.load()
+            caller.building.builder = None
+            del(caller.building)
+            caller.prompt = caller.oldprompt
+            del(caller.oldprompt)
+        elif args[0] == 'new':
+            caller.write("You are already editing a command.")
+            return
+        elif args[0] in caller.building.commands:
+            caller.building.doAttrib(args[0], ' '.join(args[1:]))
+        else:
+            caller.write(helpstring)
+    else:
+        if args[0] == 'new':
+            if len(args) != 2:
+                caller.write(helpstring)
+            else:
+                caller.building = Command(world.commandDir + "/%s" % args[1])
+                caller.building.builder = caller
+                caller.write("Editing command: {{W{0}{{x".format(args[1]))
+                caller.oldprompt = caller.prompt
+                caller.prompt = "cEdit:> "
+        elif args[0] == 'reload':
+            if args[1] in commandhash.keys():
+                commandhash[args[1]].load()
+                caller.write("{0} reloaded successfully.".format(args[1]))
+        elif args[0] in commandhash.keys():
+            caller.building = commandhash[args[0]]
+            caller.building.builder = caller
+            caller.write("Editing command: {{W{0}{{x".format(args[0]))
+            caller.oldprompt = caller.prompt
+            caller.prompt = "cEdit:> "
+        else:
+            caller.write(helpstring)
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

@@ -1,0 +1,42 @@
+name | dig~
+capability | builder~
+description | def command(caller, args):
+    helpstring = "Please see {Whelp dig{x for instructions."
+    args = args.split()
+    if len(args) == 0:
+        caller.write(helpstring)
+        return
+
+    if args[0] in exits.directions:
+        if len(args) != 2:
+            caller.write(helpstring)
+        else:
+            targetvnum = int(args[1])
+            if targetvnum in area.roomlist.keys():
+                caller.write("Room {{W{0}{{x already exists!".format(targetvnum))
+                return
+            if args[0] in caller.location.exits.keys():
+                caller.write("There is already an exit in that direction!")
+                return
+            defaultexitdata = "false 0 0 false 0 0 0 none huge false true none"
+            newexitdata = "{0} {1} {2}".format(args[0], targetvnum, defaultexitdata)
+            revexitdata = "{0} {1} {2}".format(exits.oppositedirection[args[0]], caller.location.vnum, defaultexitdata)
+            myarea = caller.location.area
+            if targetvnum < myarea.vnumlow or targetvnum > myarea.vnumhigh:
+                caller.write("That vnum is not in this areas range!")
+                return
+            else:
+                newroom = room.oneRoom(caller.location.area, vnum=targetvnum)
+                area.roomlist[targetvnum] = newroom
+                newroom.area.roomlist[targetvnum] = newroom
+                newroom.exits[exits.oppositedirection[args[0]]] = exits.Exit(newroom, revexitdata)
+                caller.location.exits[args[0]] = exits.Exit(caller.location, newexitdata)
+    else:
+        caller.write(helpstring)
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

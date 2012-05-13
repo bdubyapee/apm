@@ -1,0 +1,11 @@
+creator | admin~
+viewable | true~
+keywords | look~
+topics | info~
+section | player~
+description | {RHelp Topic{W: look{x
+
+{Wlook <argument>{x
+     Typing look on its own will show you the room you are currently in along
+     with who and what else is in the room with you. Typing look with an
+     (argument) will allow you to look at a person or thing.~

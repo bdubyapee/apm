@@ -1,0 +1,43 @@
+name | troll~
+description | Trolls are large, ugly creatures with a nasty habit of not dying. They have
+great regenerative powers, to go along with their great strength. They live
+in tribes, in swamps or marshes.~
+alignment | chaotic evil~
+playable | false~
+descriptive | a troll~
+size | large~
+heightfeet | 7~
+heightinches | 10~
+undead | false~
+weight | 230~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, eyes, face, neck, torso, back, waist, floating nearby, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, finger, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot~
+bodyparts | head, ear, scalp, eye, face, nose, tooth, tongue, torso, arm, hand, finger, leg, foot, toe, entrails, stomach, heart, kidney, lung, liver, tusk, skull, bone~
+skin | green, brown, yellow~
+eyes | green, black, brown~
+hair | green, yellow, brown, black~
+speed | 55~
+agility | 60~
+strength | 70~
+intelligence | 40~
+wisdom | 40~
+charisma | 45~
+luck | 50~
+constitution | 75~
+start_location | ~
+special_skills | ~

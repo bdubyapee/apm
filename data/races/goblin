@@ -1,0 +1,63 @@
+name | goblin~
+description | Goblins are wicked and untrustworthy race. They are deceitful creatures that
+would stab themselves in their own back if it were possible. Goblins dwell
+within the Dread Marshes, an area of swamp land that is full of pitfalls and
+deathtraps. The Dread Marshes were once said to be beautiful lush plains,
+until a powerful mage came to the land. He was a sadistic and cruel man by
+the name of Kaza'Dar, erecting a tower from which he performed an untold
+number of magical experiments. Through his magic he changed the earth about
+his tower into the Dread Marhes and created the hateful little race known as
+goblins to serve as his guardians. That was thousands of years ago, but
+rumors say the human mage still dwells deep within the marshes in a tower of
+obsidian rock. The goblins, the only ones that probably know the truth,
+never speak of the mage and in truth will deny ever knowing about such a
+man. Goblins being far from truthful are a poor source of information. This
+race can be called chaotic at best. They have no real social structure and
+only reside in large groups for convienance. They have a cruel sense of
+humor with someone's death being the ultimate laugh. They are a short race,
+slender but strong for their size. They are stealthy and quick and are
+resistant to all kinds of poison, which is probably because they use the
+stuff so often. Goblins are fierce fighters that do anything to win. They
+stand about 4'5" to 5'5". They have green, brown, or yellowish skin. Their
+eyes are black with white pupils. Their hair color ranges from black, brown,
+green, and yellow. They are not trusted by any race, although some evil
+races such as the Mazreki do employ them for their abilities quite often.~
+alignment | chaotic evil~
+playable | true~
+descriptive | a goblin~
+size | small~
+heightfeet | 5~
+heightinches | 3~
+undead | false~
+weight | 110~
+ageminimum | 15~
+agemaximum | 80~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 10~
+brpoison | 10~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, face, eyes, neck, torso, back, waist, finger, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, floating nearby, tail~
+bodyparts | head, scalp, eye, ear, nose, tooth, tongue, skull, bone, torso, arm, hand, finger, leg, foot, toe, heart, liver, lung, stomach, kidney, entrails, tail~
+skin | green, brown, yellow~
+eyes | brown, black, yellow~
+hair | black, brown, green~
+speed | 60~
+agility | 65~
+strength | 55~
+intelligence | 50~
+wisdom | 50~
+charisma | 45~
+luck | 55~
+constitution | 60~
+start_location | ~
+special_skills | ~

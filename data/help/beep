@@ -1,0 +1,8 @@
+creator | admin~
+viewable | true~
+keywords | beep, page~
+topics | commands~
+section | player~
+description | {RHelp Topic{W: beep{x <player>
+
+This will page the player specified.~

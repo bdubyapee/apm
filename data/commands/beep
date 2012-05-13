@@ -1,0 +1,21 @@
+name | beep~
+capability | player~
+description | def command(caller, args):
+    if len(args.split()) == 0:
+        caller.write("See {Whelp beep{x for help with this command.")
+        return
+    else:
+        for person in player.playerlist:
+            if person.name in args:
+                person.sock.send(b'\x07')
+                person.write("\n\rYou have been paged by {0}.".format(caller.name.capitalize()))
+                caller.write("They have been paged.")
+                return
+    caller.write("That person cannot be located")
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

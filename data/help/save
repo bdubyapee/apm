@@ -1,0 +1,9 @@
+creator | admin~
+viewable | true~
+keywords | save~
+topics | info~
+section | player~
+description | {RHelp Topic{W: save{x
+
+Save saves your character. The MUD saves automatically, but it never
+hurts to save yourself once in a while.~

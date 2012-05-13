@@ -1,0 +1,51 @@
+name | newadmin~
+password | 5f4dcc3b5aa765d61d8327deb882cf99~
+capability | player, deity, admin, builder~
+lasthost | ::1~
+lasttime | Fri Apr  6 08:56:09 2012~
+location | 101~
+long description | ~
+short description | ~
+race | human~
+age | 1~
+gender | male~
+level | 1~
+alignment | neutral~
+money | silver : 0,gold : 0,platinum : 0,copper : 0~
+height | inches : 0,feet : 0~
+weight | 1~
+maxhp | 1~
+currenthp | 1~
+maxmovement | 1~
+currentmovement | 1~
+maxwillpower | 0~
+currentwillpower | 0~
+totalmemoryslots | second circle : 0,seventh circle : 0,fifth circle : 0,third circle : 0,sixth circle : 0,eighth circle : 0,ninth circle : 0,fourth circle : 0,first circle : 0~
+memorizedspells | ~
+hitroll | 0~
+damroll | 0~
+wimpy | 0~
+title | ~
+guild | None~
+council | None~
+family | None~
+clan | None~
+deity | ~
+skillpoints | 0~
+seen as | ~
+maximum stat | wisdom : 78,agility : 70,constitution : 99,speed : 38,luck : 67,intelligence : 40,charisma : 83,strength : 61~
+current stat | wisdom : 78,agility : 70,constitution : 99,speed : 38,luck : 67,intelligence : 40,charisma : 83,strength : 61~
+discipline | mystic~
+aesthetic | A sexy, sexy beast.~
+exp | profession : 0,combat : 0,explore : 0~
+inventory | ~
+worn | ~
+baceac | slashing : 0,lashing : 0,bashing : 0,piercing : 0~
+currentac | slashing : 0,lashing : 0,bashing : 0,piercing : 0~
+hunger | 0~
+thirst | 0~
+position | standing~
+aid | 1333724163~
+known people | ~
+prompt | {papmMUD{g:{x ~
+alias | sw : southwest,page : beep,w : west,nw : northwest,s : south,ne : northeast,e : east,se : southeast,l : look,n : north~

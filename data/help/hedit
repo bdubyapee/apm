@@ -1,0 +1,28 @@
+creator | Jubelo~
+viewable | true~
+keywords | hedit~
+topics | hedit~
+section | immortal~
+description | {RHelp Topic: {Whedit{x <reload> / <helpfile> / <new> (newhelpword)
+
+{Whedit reload{x:
+    This will reload all help files from disk. 
+
+{Whedit new (argument){x:
+    This will begin creation of a new helpfile named (argument).
+
+{Whedit (argument){x:
+    This begins editing the helpfile named argument.
+
+{WAvailable options while editing a helpfile{x:
+    {Cviewable{x: true or false
+    {Ccreator{x: The creators name
+    {Ckeyword{x: The keyword for this helpfile
+    {Ctopics{x: The topics for this keyword
+    {Csection{x: The section this helpfile belongs to
+    {Cdescription{x: This puts you in buffer edit mode for the description
+    {Cdone{x: This exits editing mode, saves the work and reloads help files
+
+{WWhen in the description buffer{x:
+    Please refer to {Whelp olc{x or type {W.h{x while in the buffer for help
+    regarding buffer editing.~

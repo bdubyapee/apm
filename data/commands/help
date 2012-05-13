@@ -1,0 +1,40 @@
+name | help~
+capability | player~
+description | def command(caller, args):
+    key = args.lower()
+    if key != '':
+        key = key.split()
+        for onekey in helpsys.helpfiles:
+            if onekey.startswith(key[0]):
+                if helpsys.helpfiles[onekey].viewable.lower() == 'true':
+                    caller.write(helpsys.helpfiles[onekey].description)
+                    return
+        filename = '{0}\\missinghelp'.format(world.logDir)
+        with open(filename, 'a') as thefile:
+            thefile.write('{0}> {1}\n'.format(time.asctime(), key))
+        caller.write('We do not appear to have a help file for that topic.  We have however logged'\
+                     ' the attempt and will look into creating a help file for that topic.')
+        return
+    else:
+        caller.write("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Help Files=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+        caller.write("Usage: help <argument>\n\r")
+        retval = []
+        for onehelp in helpsys.helpfiles.keys():
+            if helpsys.helpfiles[onehelp].viewable.lower() == 'true':
+                retval.append(onehelp)
+        retval.sort()
+        numcols = 4
+        while (len(retval) % numcols) > 0:
+            retval.append(' ')
+        for i in range(0, len(retval), numcols):
+            output = ''
+            for l in range(0, numcols):
+                output += "{0:20}".format(retval[i + l])
+            caller.write(output)
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

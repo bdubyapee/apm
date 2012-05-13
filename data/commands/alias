@@ -1,0 +1,29 @@
+name | alias~
+capability | player~
+description | def command(caller, args):
+    args = args.split()
+    if len(args) == 0:
+        args.append('list')
+    
+    if args[0] == 'list':
+        caller.write("Current alias' saved:")
+        for one in caller.alias.keys():
+            caller.write("{0} => {1}".format(one, caller.alias[one]))
+    elif args[0] == 'remove' and len(args) == 2:
+        if args[1] in caller.alias.keys():
+            del caller.alias[args[1]]
+            caller.write("Alias removed.")
+        else:
+            caller.write("No alias '{0}' to remove.".format(args[1]))
+    elif args[0] == 'alias':
+        caller.write("See {Whelp alias{x for help with this command.")
+    else:
+        caller.alias[args[0]] = ' '.join(args[1:])
+        caller.write("Alias {0} successfully created.".format(args[0]))
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

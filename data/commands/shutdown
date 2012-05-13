@@ -1,0 +1,12 @@
+name | shutdown~
+capability | admin~
+description | def command(caller, args):
+    server.Server.done = True
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

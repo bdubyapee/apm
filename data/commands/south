@@ -1,0 +1,12 @@
+name | south~
+capability | player~
+description | def command(caller, args):
+    commandhash['move'].call(caller, 'south')
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

@@ -1,0 +1,43 @@
+name | dragon~
+description | Dragons are one of the most fearsome creatures one could happen apon. They
+are giant lizards that can breath fire, ice, lightning, or even poison. It
+is never a good idea to go up against one alone.~
+alignment | chaotic neutral~
+playable | false~
+descriptive | a dragon~
+size | huge~
+heightfeet | 11~
+heightinches | 11~
+undead | false~
+weight | 4000~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, tail, horns, floating nearby, neck~
+bodyparts | head, eye, tongue, tooth, skull, bone, wing, tail, torso, leg, claw, scale, entrails, stomach, heart, kidney, horn, hide, liver, lung~
+skin | red, green, black, yellow, white, blue~
+eyes | red, green, yellow, black~
+hair | none~
+speed | 50~
+agility | 55~
+strength | 80~
+intelligence | 70~
+wisdom | 65~
+charisma | 50~
+luck | 50~
+constitution | 60~
+start_location | ~
+special_skills | ~

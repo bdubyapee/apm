@@ -1,0 +1,8 @@
+creator | admin~
+viewable | true~
+keywords | goto~
+topics | movement~
+section | deity~
+description | {RHelp Topic{W: goto{x <player>/<vnum>
+
+This command will take you directly to said player or vnum.~

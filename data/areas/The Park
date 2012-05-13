@@ -1,0 +1,549 @@
+Header
+name | The park~
+author | jubelo~
+plane | material~
+hometown | human~
+difficulty | all~
+alignment | neutral~
+locationx | 10~
+locationy | 10~
+vnum low | 101~
+vnum high | 200~
+ENDHeader
+
+Rooms
+vnum | 128~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond.~
+exits | north : 129 false 0 0 false 0 0 0 none huge false true none,south : 126 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 129~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond. There
+appears to be a trail not often used leading off to the northwest between
+the trees.~
+exits | east : 130 false 0 0 false 0 0 0 none huge false true none,northwest : 132 false 0 0 false 0 0 0 none huge false true none,south : 128 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 130~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond.~
+exits | west : 129 false 0 0 false 0 0 0 none huge false true none,east : 131 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 131~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond.~
+exits | west : 130 false 0 0 false 0 0 0 none huge false true none,north : 105 false 0 0 false 0 0 0 none huge false true none,south : 123 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 132~
+name | an overgrown trail~
+description | Overgrown bushes crowd this tiny trail making it difficult to traverse it.
+It looks as if this path is used more by animals than man and obviosly is
+not maintained by any of the park's groundskeepers. Trees crowd together on
+either side as if they are trying to block anyone from coming this way. The
+trail continues to the west and southeast.~
+exits | southeast : 129 false 0 0 false 0 0 0 none huge false true none,west : 133 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 133~
+name | an overgrown trail~
+description | Overgrown bushes crowd this tiny trail making it difficult to traverse it.
+It looks as if this path is used more by animals than man and obviosly is
+not maintained by any of the park's groundskeepers. Trees crowd together on
+either side as if they are trying to block anyone from coming this way. The
+trail continues to the west and east.~
+exits | west : 134 false 0 0 false 0 0 0 none huge false true none,east : 132 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 134~
+name | before a cave~
+description | The tiny, overgrown trail suddenly empties out into a clearing that stands
+before a cave. Tall grass and bushes surround a semicircle of solid rock on
+the ground. The cave appears to be nothing more than a large rock sitting
+atop another with a gap between the two. Enormous trees loom over the
+clearing and cave as if trying to hide it from the outside world.~
+exits | east : 133 false 0 0 false 0 0 0 none huge false true none,north : 135 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 135~
+name | inside a cave~
+description | There seems to be nothing special about this small cave. In fact it appears
+to just be a hole in the ground. The rock walls are covered with lichen and
+moss, mostly a dark green with some browns and yellows mixed in. There is
+only one opening to the south.~
+exits | south : 134 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | cave~
+property value | ~
+extra descriptions | ~
+$
+vnum | 136~
+name | a small bridge~
+description | Below this bridge crystal clear water rests calmly, with only the occasional
+ripple disturbing the surface of the pond. The bridge itself is made of
+finely sanded wood stained a dark red, and is wide enough to let a few
+people stand side by side. Handrails made of the same red stained wood run
+on either side of the bridge, offering support and safety for those
+crossing. To the west is a small island upon which several stone benches
+sit. To the east a dirt path leads off into the trees.~
+exits | west : 137 false 0 0 false 0 0 0 none huge false true none,east : 123 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | city~
+property value | ~
+extra descriptions | ~
+$
+vnum | 137~
+name | a small island~
+description | This island rests quietly in the middle of a pond of pure clear water. Along
+the banks of the island round, red stained, wooden posts stand side by side
+surrounding the small island. Short cut grass covers the ground and a few
+stone benches sit near the edges of the pond for people to sit on and gaze
+out onto the water. A red wooden bridge connects the island to the east bank
+of the tiny lake.~
+exits | west : 138 false 0 0 false 0 0 0 none huge false true none,east : 136 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 138~
+name | a small island~
+description | This island rests quietly in the middle of a pond of pure, clear water.
+Along the banks of the island round, red stained, wooden posts stand side by
+side surrounding the small island. Short cut grass covers the ground and a
+few stone benches sit near the edges of the water for people to sit on and
+gaze out onto the pond. A red wooden bridge connects the island to the east
+bank of the tiny lake.~
+exits | east : 137 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 101~
+name | northern entrance to the park~
+description | A stone wall of eight feet runs to the west and east, an opening in it here
+at the entrance. The wall stands next to a street that lies parallel on the
+north side of the barrier. Within the wall stand tall trees, many of which
+have branches that hang over the wall and the street beside it. A well used
+path leads off to the south through the trees. Between the trees a variety
+of vegetation grows such as bushes and tall grass.~
+exits | south : 102 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 102~
+name | a path through the trees~
+description | This path looks to be well used by a number of pedestrians from the city.
+Hard packed dirt runs north and south here, wide enough to let several
+people walk beside each other. Along the trail tall, ancient trees stand
+like guards at attention to either side. Their branches criss crossing each
+other making a conopy above the trail. A variety of bushes and grasses grow
+between the silent senteries.~
+exits | north : 101 false 0 0 false 0 0 0 none huge false true none,south : 103 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 103~
+name | a path through the trees~
+description | This path looks to be well used by a number of pedestrians from the city.
+Hard packed dirt runs north and southeast here, wide enough to let several
+people walk beside each other. Along the trail tall, ancient trees stand
+like guards at attention to either side. Their branches criss crossing each
+other making a conopy above the trail. A variety of bushes and grasses grow
+between the silent senteries.~
+exits | southeast : 104 false 0 0 false 0 0 0 none huge false true none,north : 102 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 104~
+name | a path through the trees~
+description | This path looks to be well used by a number of pedestrians from the city.
+Hard packed dirt runs northwest and south here, wide enough to let several
+people walk beside each other. Along the trail tall, ancient trees stand
+like guards at attention to either side. Their branches criss crossing each
+other making a conopy above the trail. A variety of bushes and grasses grow
+between the silent senteries.~
+exits | northwest : 103 false 0 0 false 0 0 0 none huge false true none,south : 105 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 105~
+name | a path through the trees~
+description | This path looks to be well used by a number of pedestrians from the city.
+Hard packed dirt runs north and south here, wide enough to let several
+people walk beside each other. Along the trail tall, ancient trees stand
+like guards at attention to either side. Their branches criss crossing each
+other making a conopy above the trail. A variety of bushes and grasses grow
+between the silent senteries. Hidden behind one {Gbush{x there appears to be
+a small trail.~
+exits | east : 106 false 0 0 false 0 0 0 none huge false true none,north : 104 false 0 0 false 0 0 0 none huge false true none,south : 131 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | bush : It is a regular small bush.~
+$
+vnum | 106~
+name | a small trail~
+description | Tall grass and low branches stretch out into the trail almost concealing the
+path altogether. This obviously is not used by the majority of people
+visiting the park, but seems to be used more by the wildlife that lives
+here. Bushes and weeds try to block the way further into the trees on either
+side of the small trail. The path seems to continue off to the east but
+leads out to more well used trail to the west.~
+exits | west : 105 false 0 0 false 0 0 0 none huge false true none,east : 107 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 107~
+name | a small trail~
+description | Tall grass and low branches stretch out into the trail almost concealing the
+path altogether. This obviously is not used by the majority of people
+visiting the park, but seems to be used more by the wildlife that lives
+here. Bushes and weeds try to block the way further into the trees on either
+side of the small trail. The path seems to continue off to the west but
+leads out to a small clearing to the northeast.~
+exits | west : 106 false 0 0 false 0 0 0 none huge false true none,northeast : 108 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 108~
+name | a small clearing~
+description | Oddly in the mass of trees and other vegetation there is a small clearing.
+Giant trees surround an open area of tall grass, their branches reaching out
+and nearly blocking out the sky. Another peculiarity is there are none of
+the many bushes, that fill the park, within the clearing.~
+exits | east : 111 false 0 0 false 0 0 0 none huge false true none,north : 109 false 0 0 false 0 0 0 none huge false true none,southwest : 107 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 109~
+name | a small clearing~
+description | Oddly in the mass of trees and other vegetation there is a small clearing.
+Giant trees surround an open area of tall grass, their branches reaching out
+and nearly blocking out the sky. Another peculiarity is there are none of
+the many bushes, that fill the park, within the clearing. There is a
+{ystump{x here from one of the giant trees being cut down.~
+exits | east : 110 false 0 0 false 0 0 0 none huge false true none,south : 108 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 110~
+name | a small clearing~
+description | Oddly in the mass of trees and other vegetation there is a small clearing.
+Giant trees surround an open area of tall grass, their branches reaching out
+and nearly blocking out the sky. Another peculiarity is there are none of
+the many bushes, that fill the park, within the clearing.~
+exits | west : 109 false 0 0 false 0 0 0 none huge false true none,south : 111 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 111~
+name | a small clearing~
+description | Oddly in the mass of trees and other vegetation there is a small clearing.
+Giant trees surround an open area of tall grass, their branches reaching out
+and nearly blocking out the sky. Another peculiarity is there are none of
+the many bushes, that fill the park, within the clearing.~
+exits | west : 108 false 0 0 false 0 0 0 none huge false true none,north : 110 false 0 0 false 0 0 0 none huge false true none,south : 112 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 112~
+name | a small trail~
+description | Tall grass and low branches stretch out into the trail almost concealing the
+path altogether. This obviously is not used by the majority of people
+visiting the park, but seems to be used more by the wildlife that lives
+here. Bushes and weeds try to block the way further into the trees on either
+side of the small trail. The path seems to continue off to the south but
+leads out to a small clearing to the north.~
+exits | north : 111 false 0 0 false 0 0 0 none huge false true none,south : 113 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 113~
+name | a small trail~
+description | Tall grass and low branches stretch out into the trail almost concealing the
+path altogether. This obviously is not used by the majority of people
+visiting the park, but seems to be used more by the wildlife that lives
+here. Bushes and weeds try to block the way further into the trees on either
+side of the small trail. The path seems to continue off to the north and to
+the southeast.~
+exits | southeast : 114 false 0 0 false 0 0 0 none huge false true none,north : 112 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 114~
+name | a small trail~
+description | Tall grass and low branches stretch out into the trail almost concealing the
+path altogether. This obviously is not used by the majority of people
+visiting the park, but seems to be used more by the wildlife that lives
+here. Bushes and weeds try to block the way further into the trees on either
+side of the small trail. The path seems to continue off to the northwest but
+leads out to more well used trail to the southeast.~
+exits | southeast : 115 false 0 0 false 0 0 0 none huge false true none,northwest : 113 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | forest~
+property value | ~
+extra descriptions | ~
+$
+vnum | 115~
+name | eastern entrance to the park~
+description | An opening with an eight foot tall stone wall, running north and south,
+leads into a large park within the city. Parallel to the east side of the
+wall runs a paved city street. To the west of the wall tall trees tower
+overhead, their branches covering the wall and most of the street beside it.
+A trail of hard packed dirt runs through the trees off to the southwest.
+Large bushes and tall grass covers the sides of the path where the trees do
+not stand. Hidden behind one {Gbush{x there looks to be a small trail seldom
+used.~
+exits | northwest : 114 false 0 0 false 0 0 0 none huge false true none,southwest : 116 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 116~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path leads off to the northsouthwest and southwest through the park.~
+exits | northeast : 115 false 0 0 false 0 0 0 none huge false true none,southwest : 117 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 117~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path makes a slight turn leading off to the west and northeast through
+the park.~
+exits | west : 118 false 0 0 false 0 0 0 none huge false true none,northeast : 116 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 118~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path leads off to the west and east through the park.~
+exits | west : 119 false 0 0 false 0 0 0 none huge false true none,east : 117 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 119~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path turns here leading to the north and east through the park.~
+exits | east : 118 false 0 0 false 0 0 0 none huge false true none,north : 120 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 120~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path leads off to the north and south through the park.~
+exits | north : 121 false 0 0 false 0 0 0 none huge false true none,south : 119 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 121~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path leads off to the west and takes a turn to the south through the
+park.~
+exits | west : 122 false 0 0 false 0 0 0 none huge false true none,south : 120 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 122~
+name | a well beaten path~
+description | Large trees stand tall along either side of a path of hard packed dirt,
+their branches reaching out over the path creating a living roof over the
+trail. Tall grass and a variety of bushes fill in the spaces between the
+trees creating a wall of vegetation on either side of the walkway. The wide
+dirt path leads off to the west and east through the park.~
+exits | west : 123 false 0 0 false 0 0 0 none huge false true none,east : 121 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 123~
+name | clearing by a pond~
+description | Hard packed dirt forms a path that leads from a bridge to the west back into
+the tall trees, encircling the clearing, to the east. The bridge spans over
+a pond to a small island sitting in the middle of it. Along the banks of the
+pond, short cut grass slopes up gently from the pond up to the trees
+surrounding the area.~
+exits | west : 136 false 0 0 false 0 0 0 none huge false true none,east : 122 false 0 0 false 0 0 0 none huge false true none,north : 131 false 0 0 false 0 0 0 none huge false true none,south : 124 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 124~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond.~
+exits | west : 125 false 0 0 false 0 0 0 none huge false true none,north : 123 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 125~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond.~
+exits | west : 126 false 0 0 false 0 0 0 none huge false true none,east : 124 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 126~
+name | clearing by a pond~
+description | Trees encircle a large clearing of short cut grass that slopes gently down
+toward a pond sitting in the middle of the clearing. The branches of the
+trees reach out in vain trying to cover the sky about the peaceful
+sanctuary. In the middle of the pond there is a tiny island with several
+benches that visitors use to relax or feed the ducks. A bridge can also be
+seen connecting the small island to the eastern bank of the pond. To the
+west, standing up against the trees, is a small wooden shed.~
+exits | west : 127 false 0 0 false 0 0 0 none huge false true none,east : 125 false 0 0 false 0 0 0 none huge false true none,north : 128 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | field~
+property value | ~
+extra descriptions | ~
+$
+vnum | 127~
+name | a tool shed~
+description | This small shed holds a variety of tools that the groundskeepers use to
+maintain the pond and the clearing it sits in. The shed itself seems to be
+in fair condition with no missing boards or planks. Everything appears to be
+orderly and clean. There are no windows, but there are several benches and
+racks upon which numerous tools rest. A door on the east wall leads back out
+to the clearing and pond.~
+exits | east : 126 false 0 0 false 0 0 0 none huge false true none~
+flags | ~
+sector type | inside~
+property value | ~
+extra descriptions | ~
+$
+ENDRooms
+
+Mobs
+ENDMobs
+
+Objects
+ENDObjects
+
+Resets
+ENDResets
+
+Shops
+ENDShops
+

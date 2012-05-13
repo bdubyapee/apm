@@ -1,0 +1,19 @@
+creator | admin~
+viewable | true~
+keywords | say, ooc, quote, emote, channels~
+topics | channels~
+section | player~
+description | {RHelp Topic{W: channels / say / ooc / quote / emote{x
+
+{Wsay / ooc / quote / emote{x <argument>
+     This will print the <argument> on the specified channel.
+
+Says and emotes can only be seen by other players in the same room.
+Says are something your charcter communicates verbally. Emotes are
+actions your character does physically.
+
+Oocs and quotes are global channels and can be heard by all players
+currently on the MUD that have the channels turned on.
+
+You can toggle a channel off and on by typing the channel name with
+no argument.~

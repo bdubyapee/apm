@@ -1,0 +1,10 @@
+creator | admin~
+viewable | true~
+keywords | quit, rent~
+topics | info~
+section | player~
+description | {RHelp Topic{W: quit / rent{x
+
+Quit and rent allow you to exit the game. Most players will have to rent
+at an inn to begin with. Those that eventually purchase their own home will
+be able to quit there.~

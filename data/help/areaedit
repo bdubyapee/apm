@@ -1,0 +1,32 @@
+creator | jubelo~
+viewable | true~
+keywords | areaedit~
+topics | olc~
+section | builder~
+description | {RHelp Topic{W: Areaedit{x here / new (area name) / reload
+
+{Wareaedit here:{x
+     This will start editing the area you are currently in.
+
+{Wareaedit new (area name):{x
+     This begins editing the new area named (area name).
+     
+{Wareaedit reload:{x
+     This saves and reloads the area you are in.
+
+{WAvailable options while editing an area:{x
+     {Cname{W:{x Sets the name of this area.
+     {Cauthor{W:{x Sets name of the builder for this area.
+     {Cplane{W:{x Sets the plane this area resides in.
+     {Chometown{W:{x Sets this area as a hometown for a particular race
+     {Cdifficulty{W:{x Sets the listed difficulty for the area.
+     {Calignment{W:{x Sets the alignment for this area, if there is one.
+     {Clocationx{W:{x Sets the x location for the wilderness map.
+     {Clocationy{W:{x Sets the y location for the wilderness map.
+     {Cvnumlow{W:{x Sets the low vnum for the area.  {W({RBE CAREFUL!{W){x
+     {Cvnumhigh{W: {x Sets the high vnum for this area. {W({RBE CAREFUL!{W){x
+     
+{WSpecial Notes:{x
+     {RYou must 'propogate' when in the editor as soon as the other options{x
+     {Rare configured!  This creates the first room in the area as a{x
+     {Rplace holder.  You can then type 'done' to finish the area creation.{x~

@@ -1,0 +1,10 @@
+creator | admin~
+viewable | true~
+keywords | title~
+topics | info~
+section | player~
+description | {RHelp Topic{W: title{x <argumemnt>
+
+{Wtitle <argument>:{x
+     This sets your title to display in the 'who'.
+~

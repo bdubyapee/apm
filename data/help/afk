@@ -1,0 +1,11 @@
+creator | admin~
+viewable | true~
+keywords | afk~
+topics | commands~
+section | player~
+description | {RHelp Topic{W: afk{x
+
+When this command is entered you will be flagged as afk, or away from
+keyboard. This allows other players to see that you are not currently
+at your computer. Any command entered while flagged as afk will remove
+you from afk.~

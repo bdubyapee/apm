@@ -1,0 +1,15 @@
+creator | admin~
+viewable | true~
+keywords | alias~
+topics | info~
+section | player~
+description | {RHelp Topic{W: alias{x <argumemnt>(command) / <remove>(argument) / <list>
+
+{Walias (argument) (command):{x
+     This sets a command to said argument.
+
+{Walias remove (argument):{x
+     Removes the specified alias.
+
+{Walias list:{x
+     Shows you a list of aliases you currently have.~

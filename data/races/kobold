@@ -1,0 +1,43 @@
+name | kobold~
+description | Kobolds are half-man, half-dog creatures that walk on two legs. They
+generally live in packs and with the strongest male being their leader. They
+are not very intelligent or strong, but they are quite quick and agile.~
+alignment | chaotic evil~
+playable | false~
+descriptive | a kobold~
+size | medium~
+heightfeet | 5~
+heightinches | 8~
+undead | false~
+weight | 160~
+ageminimum | 14~
+agemaximum | 90~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, eyes, neck, left arm, left forearm, left hand, left leg, left shoulder, left shin, left foot, torso, back, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, waist, tail, floating nearby~
+bodyparts | head, face, hand, leg, foot, nose, ear, torso, entrails, tail, snout, paw, tongue, eye, skull, arm, bone, heart, liver, stomach, kidney, lung, claw, whisker, tooth, hide~
+skin | pink, black~
+eyes | black, brown, gold~
+hair | black, brown, white, gray~
+speed | 65~
+agility | 65~
+strength | 45~
+intelligence | 45~
+wisdom | 30~
+charisma | 40~
+luck | 55~
+constitution | 50~
+start_location | ~
+special_skills | ~

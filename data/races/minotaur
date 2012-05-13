@@ -1,0 +1,42 @@
+name | minotaur~
+description | Minotaurs are half-man, half-bull creatures. They are quick to anger and
+dangerous to do so.~
+alignment | neutral evil~
+playable | false~
+descriptive | a minotaur~
+size | large~
+heightfeet | 9~
+heightinches | 0~
+undead | false~
+weight | 250~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | horns, head, eyes, neck, torso, back, waist, right shoulder, right arm, right forearm, right hand, right leg, right shin, finger, left shoulder, left arm, left forearm, left hand, left leg, left shin, floating nearby~
+bodyparts | head, eye, ear, nose, face, scalp, tongue, tooth, skull, bone, torso, arm, hand, finger, leg, hoof, hide, entrails, stomach, heart, kidney, liver, lung, horn~
+skin | tan, brown, pale~
+eyes | brown, black~
+hair | black, brown~
+speed | 55~
+agility | 55~
+strength | 70~
+intelligence | 45~
+wisdom | 50~
+charisma | 45~
+luck | 55~
+constitution | 65~
+start_location | ~
+special_skills | ~

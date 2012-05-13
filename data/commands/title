@@ -1,0 +1,16 @@
+name | title~
+capability | player~
+description | def command(caller, args):
+    args = args.split()
+    if len(args) == 0:
+        caller.write("Please see {Whelp title{x for help.")
+        return
+    caller.title =  ' '.join(args)[0:40]
+    caller.write('{xYour title has been set.')
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

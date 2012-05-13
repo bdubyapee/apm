@@ -1,0 +1,41 @@
+name | skeleton~
+description | Undead monsters made of bones. Blunt objects work well against these foes.~
+alignment | neutral evil~
+playable | false~
+descriptive | ~
+size | medium~
+heightfeet | 6~
+heightinches | 0~
+undead | true~
+weight | 90~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, face, eyes, neck, torso, back, waist, finger, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot~
+bodyparts | skull, bone~
+skin | none~
+eyes | none~
+hair | none~
+speed | 65~
+agility | 55~
+strength | 55~
+intelligence | 40~
+wisdom | 40~
+charisma | 40~
+luck | 55~
+constitution | 55~
+start_location | ~
+special_skills | ~

@@ -1,0 +1,48 @@
+name | dwarf~
+description | Dwarves are an industrious people, believing in working and playing hard.  They are great miners and forgers of metal. Dwarves are the only race that know how to forge the world's strongest metals like mithril and adamantite.
+They live under Aludria's Tears mining and forging precious metals. Dwarves
+are loud and obnoxious and extremely religious. They enjoy the simpiliar
+pleasures in life like eating and drinking. They can be hot tempered at
+times, but it is mostly for show. Dwaves stand from 4'10" to 5'6" They are
+strong physcially and have hearty constitutions. Their eye color ranges from
+brown, blue, and green, and their hair color ranges from red, blonde, black,
+and brown.~
+alignment | lawful good~
+playable | true~
+descriptive | a dwarf~
+size | small~
+heightfeet | 5~
+heightinches | 5~
+undead | false~
+weight | 180~
+ageminimum | 30~
+agemaximum | 150~
+baslashing | 0~
+babashing | 5~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 10~
+brdisease | 5~
+brpoison | 0~
+brmagic | 0~
+brholy | 10~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, eyes, face, neck, torso, back, finger, waist, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot~
+bodyparts | head, face, scalp, ear, eye, nose, tooth, tongue, skull, bone, torso, arm, leg, hand, foot, finger, toe, heart, lung, liver, stomach, kidney, entrails~
+skin | white, brown~
+eyes | brown, blue, green~
+hair | red, blonde, brown, black~
+speed | 55~
+agility | 50~
+strength | 60~
+intelligence | 45~
+wisdom | 65~
+charisma | 50~
+luck | 55~
+constitution | 60~
+start_location | ~
+special_skills | ~

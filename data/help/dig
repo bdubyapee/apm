@@ -1,0 +1,12 @@
+creator | admin~
+viewable | true~
+keywords | dig~
+topics | olc~
+section | immortal~
+description | {RHelp Topic{W: Dig{x
+
+{Wdig <direction> <vnum>{x
+     This will create a new room with the vnum of (vnum). It
+     also creates a two way exit in the specified (direction).
+     The exits will be set to default and will need extra
+     values such as doors and exit sizes set.~

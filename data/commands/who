@@ -1,0 +1,36 @@
+name | who~
+capability | player~
+description | def command(caller, args):
+    
+
+    caller.write(" Put a fance ASCII diddly doo graphic in here if you want.")
+    for person in player.playerlist:
+        if person.isadmin():
+            extra0 = 'ADM'
+        elif person.isdeity():
+            extra0 = 'DEI'
+        elif person.isbuilder():
+            extra0 = 'BLD'
+        else:
+            extra0 = person.race.name.capitalize()
+        if hasattr(person, 'building'):
+            extra1 = '{W[{RBuilding{W]{x'
+        elif hasattr(person, 'editing'):
+            extra1 = '{W[{REditing{W]{x'
+        else:
+            extra1 = ''
+        if person.oocflags['afk'] == True:
+            extra2 = '{W[{RAFK{W]{x'
+        elif person.oocflags['coding'] == True:
+            extra2 = '{W[{RCoding{W]{x'
+        else:
+            extra2 = ''
+        caller.write("{{W[{{R{0:7} {{B{1:>6}{{W]{{x {2} {3}{4}{5}".format(extra0, person.gender.capitalize(), person.name.capitalize(), person.title, extra2, extra1))
+
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

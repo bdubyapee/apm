@@ -1,0 +1,31 @@
+name | commands~
+capability | player~
+description | def command(caller, args):
+    caller.write("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Commands=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+    caller.write("{Rred commands{x = Currently disabled.")
+    caller.write("")
+    retval = []
+    for comm in commandhash.keys():
+        if commandhash[comm].capability in caller.capability:
+            if commandhash[comm].noview.lower() == 'false':
+                if commandhash[comm].disabled == 'true':
+                    retval.append('{{R{0}{{x '.format(comm))
+                else:
+                    retval.append(comm)
+    retval.sort()
+    numcols = 4
+    while (len(retval) % numcols) > 0:
+        retval.append(' ')
+    for i in range(0, len(retval), numcols):
+        output = ''
+        for l in range(0, numcols):
+            output += "{0:20}".format(retval[i + l])
+        caller.write(output)        
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+

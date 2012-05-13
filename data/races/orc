@@ -1,0 +1,42 @@
+name | orc~
+description | Orcs are nasty creatures a little larger than humans, and not nearly as
+pretty.~
+alignment | lawful evil~
+playable | false~
+descriptive | an orc~
+size | medium~
+heightfeet | 6~
+heightinches | 2~
+undead | false~
+weight | 200~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | head, eyes, face, neck, torso, back, waist, finger, right shoulder, right arm, right forearm, right hand, right leg, right shin, right foot, left shoulder, left arm, left forearm, left hand, left leg, left shin, left foot, floating nearby~
+bodyparts | head, ear, eye, nose, face, scalp, tongue, tooth, skull, bone, torso, arm, hand, finger, leg, foot, toe, entrails, stomach, heart, kidney, liver, lung~
+skin | tan, yellow, pale~
+eyes | yellow, green, black, brown~
+hair | yellow, green, black~
+speed | 55~
+agility | 60~
+strength | 65~
+intelligence | 55~
+wisdom | 50~
+charisma | 45~
+luck | 55~
+constitution | 60~
+start_location | ~
+special_skills | ~

@@ -1,0 +1,16 @@
+name | afk~
+capability | player~
+description | def command(caller, args):
+    if caller.oocflags['afk'] == True:
+        caller.oocflags['afk'] = False
+        caller.write("AFK mode removed.")
+    else:
+        caller.oocflags['afk'] = True
+        caller.write('You have been placed in AFK mode.')
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

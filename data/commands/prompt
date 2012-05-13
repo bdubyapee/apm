@@ -1,0 +1,17 @@
+name | prompt~
+capability | player~
+description | def command(caller, args):
+    args = args.split()
+    if len(args) == 0:
+        caller.write("Please see {Whelp prompt{x for help.")
+        return
+    
+    caller.prompt = ' '.join(args[:50])
+    caller.write('{xYour prompt has been configured.')
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

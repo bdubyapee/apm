@@ -1,0 +1,42 @@
+name | lion~
+description |  Large cats, usually referred to as king of the jungle. Don't get between a
+hungry one and its meal.~
+alignment | neutral~
+playable | false~
+descriptive | a lion~
+size | medium~
+heightfeet | 4~
+heightinches | 6~
+undead | false~
+weight | 200~
+ageminimum | 0~
+agemaximum | 0~
+baslashing | 0~
+babashing | 0~
+bapiercing | 0~
+balashing | 0~
+brfire | 0~
+brice | 0~
+brlightning | 0~
+brearth | 0~
+brdisease | 0~
+brpoison | 0~
+brmagic | 0~
+brholy | 0~
+brmental | 0~
+brphysical | 0~
+wearlocations | neck, back, tail~
+bodyparts | head, ear, eye, nose, whisker, tooth, tongue, skull, bone, hide, pelt, torso, leg, paw, claw, tail, entrails, stomach, heart, kidney, liver, lung~
+skin | pink~
+eyes | yellow, green~
+hair | yellow~
+speed | 60~
+agility | 70~
+strength | 65~
+intelligence | 45~
+wisdom | 40~
+charisma | 50~
+luck | 60~
+constitution | 60~
+start_location | ~
+special_skills | ~

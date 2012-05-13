@@ -1,0 +1,16 @@
+name | viewolcdetails~
+capability | builder~
+description | def command(caller, args):
+    if caller.oocflags['viewOLCdetails'] == True:
+        caller.oocflags['viewOLCdetails'] = False
+        caller.write("You will no longer see OLC details.")
+    else:
+        caller.oocflags['viewOLCdetails'] = True
+        caller.write("You will now see OLC details.")
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~

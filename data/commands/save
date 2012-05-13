@@ -1,0 +1,13 @@
+name | save~
+capability | player~
+description | def command(caller, args):
+    caller.save()
+    caller.write("Saved.  Your character is also autosaved every 5 minutes.")
+
+command(caller, args)~
+disabled | false~
+racelim | ~
+classlim | ~
+skilllim | ~
+noview | False~
+
