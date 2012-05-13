@@ -25,6 +25,9 @@ Start by running apm.py.  You should then be able to telnet to localhost port 40
 recomend PuTTY as a telnet client as that is the one I use to test with.  Any 'non-windows'
 telnet client should work, however I haven't tested many of them.
 
-I can be reached on http://www.python-forum.org/ (the Game Programming sub).
+I can be reached on http://www.python-forum.org/ (the Game Programming sub). (bwp)
+
+THIS IS AN EXPERIMENT.  THIS CODE MAY OR MAY NOT WORK IN ANY WAY SHAPE OR FORM.
+USE AT YOUR OWN RISK.
 
 bdubyapee
