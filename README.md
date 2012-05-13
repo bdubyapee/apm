@@ -2,3 +2,25 @@ apm
 ===
 
 Another Python MUD
+===
+
+An example of a MUD server in Python.  I played and worked on some code for old MUDs
+mostly MERC/DIKU/ROM based back in the mid '90s so you will see some design similarities
+as I based features I wanted on ones I had seen before.  There are some new features
+I haven't seen in any other MUD, however I do not keep up on current MUD development
+so I may be 'reinventing the wheel' to an extent.  This is primarily a tinkering tool
+I use to try out new Python features with the intent of creating a real live MUD at some point.
+
+
+Python Version: Verified to work on Python 3.3.0a3.  Not verified to work on any other version.
+I develop on Windows 7 currently.  You will need to modify world.py to match your OS/setup.
+
+
+
+Start by running apm.py.  You should then be able to telnet to localhost port 4000.  I
+recomend PuTTY as a telnet client as that is the one I use to test with.  Any 'non-windows'
+telnet client should work, however I haven't tested many of them.
+
+I can be reached on http://www.python-forum.org/ (the Game Programming sub).
+
+bdubyapee
