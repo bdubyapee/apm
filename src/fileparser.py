@@ -1,7 +1,7 @@
 #! usr/bin/env python
 # Project: Another Python MUD (apm)
 # Filename: fileparse.py
-# 
+#
 # File Description: File to handle flatfile parsing, loading and writing.
 # 
 # By: admin
