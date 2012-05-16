@@ -18,7 +18,7 @@ or modify them as requested.
 
 Python Version: Verified to work on Python 3.3.0a3.  Not verified to work on any other version.
 I develop on Windows 7 currently.  You will need to modify world.py to match your OS/setup.
-There is also a WingIDE project file in the /src folder if you happen to use Wing.
+There is also a WingIDE project file in the /src folder if you happen to use Wing. 
 
 
 Start by running apm.py.  You should then be able to telnet to localhost port 4000.  I
