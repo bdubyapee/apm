@@ -31,6 +31,8 @@ Password: password
 
 I can be reached on http://www.python-forum.org/ (the Game Programming sub). (bwp)
 
+I am also still learning GitHub so please send me a message if you want to discuss commit privs.
+
 THIS IS AN EXPERIMENT.  THIS CODE MAY OR MAY NOT WORK IN ANY WAY SHAPE OR FORM.
 USE AT YOUR OWN RISK.
 
