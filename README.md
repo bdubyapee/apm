@@ -4,19 +4,15 @@ apm
 Another Python MUD
 ===
 
-An example of a MUD server in Python.  I played and worked on some code for old MUDs
-mostly MERC/DIKU/ROM based back in the mid '90s so you will see some design similarities
-as I based features I wanted on ones I had seen before.  There are some new features
-I haven't seen in any other MUD, however I do not keep up on current MUD development
-so I may be 'reinventing the wheel' to an extent.  This is primarily a tinkering tool
-I use to try out new Python features with the intent of creating a real live MUD at some point.
+Another Python MUD (APM), is a MUD (Multi-User Dungeon) engine written in Python.  The design is
+loosely based on the original merc/diku/ROM style of MUDs.  The purpose is to create a general
+use MUD that offers features not found in other similiarly styled games.
 
-As I started this project back in early 2006(ish), I was learning at the time and using examples
-to help me through some tough parts so if there are any similiarities to other code I will remove
-or modify them as requested.
+What is a MUD?  http://en.wikipedia.org/wiki/MUD
+What is Python? http://www.python.org/
 
 
-Python Version: Verified to work on Python 3.3.0a3.  Not verified to work on any other version.
+Current Python Development Version: Python 3.3.0a3.
 I develop on Windows 7 currently.  You will need to modify world.py to match your OS/setup.
 There is also a WingIDE project file in the /src folder if you happen to use Wing. 
 
@@ -29,11 +25,23 @@ There is a generic admin character already created:
 Username: newadmin
 Password: password
 
-I can be reached on http://www.python-forum.org/ (the Game Programming sub). (bwp)
+I can be reached on:
+    GitHub
+    http://www.python-forum.org/ (the Game Programming sub). (bwp)
 
-I am also still learning GitHub so please send me a message if you want to discuss commit privs.
 
-THIS IS AN EXPERIMENT.  THIS CODE MAY OR MAY NOT WORK IN ANY WAY SHAPE OR FORM.
-USE AT YOUR OWN RISK.
+APM - Another Python Mud
+Copyright (C) 2012  bdubyapee (BWP) p h i p p s b @ g m a i l . c o m
 
-bdubyapee
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.

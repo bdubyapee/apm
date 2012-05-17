@@ -1,7 +1,7 @@
 #! usr/bin/env python
 # 
 #  APM - Another Python Mud
-#  Copyright (C) 2012  bdubyapee (BWP)
+#  Copyright (C) 2012  bdubyapee (BWP) p h i p p s b @ g m a i l . c o m
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
