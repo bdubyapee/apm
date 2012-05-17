@@ -9,10 +9,12 @@ loosely based on the original merc/diku/ROM style of MUDs.  The purpose is to cr
 use MUD that offers features not found in other similiarly styled games.
 
 What is a MUD?  http://en.wikipedia.org/wiki/MUD
+
 What is Python? http://www.python.org/
 
 
 Current Python Development Version: Python 3.3.0a3.
+
 I develop on Windows 7 currently.  You will need to modify world.py to match your OS/setup.
 There is also a WingIDE project file in the /src folder if you happen to use Wing. 
 
@@ -22,11 +24,15 @@ recomend PuTTY as a telnet client as that is the one I use to test with.  Any 'n
 telnet client should work, however I haven't tested many of them.
 
 There is a generic admin character already created:
+
 Username: newadmin
+
 Password: password
 
 I can be reached on:
+
     GitHub
+
     http://www.python-forum.org/ (the Game Programming sub). (bwp)
 
 
