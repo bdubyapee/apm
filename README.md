@@ -13,7 +13,8 @@ What is a MUD?  http://en.wikipedia.org/wiki/MUD
 What is Python? http://www.python.org/
 
 
-Current Python Development Version: Python 3.3.0a3.
+Current Python Development Version: 3.2.3
+Tested up to, but not supported on: 3.3.0a3.
 
 I develop on Windows 7 currently.  You will need to modify world.py to match your OS/setup.
 There is also a WingIDE project file in the /src folder if you happen to use Wing. 

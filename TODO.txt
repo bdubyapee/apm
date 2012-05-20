@@ -1,0 +1,29 @@
+Todo, in mild order or priority:
+
+Figure out the Milestone and Issue tracker features of GitHub.
+
+Document the code base as much as possible.
+
+Determine how I want to store persistant data other than the current flat file.
+
+
+Develop Milestones/Branches:
+	Develop persistant data storage system for:
+		Help File Data
+		World Configuration
+		Topic specific configuration data (Body Parts, Property Values etc)
+		Area descriptions and exit information?
+
+	Develop the world more fully:
+		Expand on current area system.
+		Develop a weather system.
+		Flush out ideas on the city/kingdom system.
+		Build framework for 'between text area' wilderness area.
+		
+	Develop Objects:
+		?
+
+	Develop Mobiles (Also refered to as NPCs), game controlled characters/beings:
+		?
+
+	More to be deiced at this point - Open to ideas to make it more 'theme' generic.
