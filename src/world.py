@@ -19,19 +19,36 @@
 #
 # Filename: world.py
 # 
-# File Description: Contains configuration data
+# File Description: Contains configuration data.
 
 
 import os
 
-# Directory Configuration values
+# Generic configuration values.
+
+
+# homeDir is the root path, it should contain 'data' and 'src' directories.
 homeDir = 'c:\\apm'
+
+# dataDir is the root path to all of the data files.  logs, help files, areas etc.  See below.
 dataDir = os.path.join(homeDir, 'data')
+
+# Absolute path to the log file directory.  We keep player log files and APM log files here.
 logDir = os.path.join(dataDir, 'log')
+
+# Absolute path to the 'in-game' help files.
 helpDir = os.path.join(dataDir, 'help')
+
+# Absolute path to the player files.
 playerDir = os.path.join(dataDir, 'players')
+
+# Absolute path to the race definition files.
 raceDir = os.path.join(dataDir, 'races')
+
+# Absolute path to the area files.
 areaDir = os.path.join(dataDir, 'areas')
+
+# Absolute path to the command files.  
 commandDir = os.path.join(dataDir, 'commands')
 
 
