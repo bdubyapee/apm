@@ -29,27 +29,34 @@ Public variables:
     None
 
 
-Public methods:
+Public functions:
     colorize(string) : return string
     
     decolorize(string) : return string
 
 
-Private variables:
-    __color_table : dictionary
-        Contains a mapping of 'special symbols' that equate to ANSI codes.
-
-
-Private methods:
+Public classes:
     None
 
 
+Private variables:
+    _color_table : dictionary
+        Contains a mapping of 'special symbols' that equate to ANSI codes.
+
+
+Private functions:
+    None
+
+
+Private classes:
+    None
+    
 """
 
 
 # Mapping to convert APM type symbols to ANSI codes to send to telnet clients.
 
-__color_table = {'{x': '0;0m', # Clear back to white on black
+_color_table = {'{x': '0;0m', # Clear back to white on black
                  '{*': '\x07', # Beep code
                  '{d': '0;30m', # Set foreground color to black
                  '{r': '0;31m', # Set foreground color to red
@@ -104,7 +111,7 @@ def colorize(text):
         
     """
     if '{' in text:
-        for item, code in __color_table.items():
+        for item, code in _color_table.items():
             text = text.replace(item, '\x1b[{0}'.format(code))
         return text
     else:
@@ -132,7 +139,7 @@ def decolorize(text):
         
     """
     if '{' in text:
-        for item in __color_table.keys():
+        for item in _color_table.keys():
             text = text.replace(item, '')
         return text
     else:

@@ -16,10 +16,38 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#
-# Filename: apm.py
-# 
-# File Description: Main "startup" file for Another Python MUD (apm).
+
+"""Filename: apm.py
+ 
+File Description: Main 'startup' file for Another Python MUD (apm).
+               
+                  
+Public variables:
+    None
+
+
+Public functions:
+    None
+
+    
+Public classes:
+    None
+
+
+Private variables:
+    None
+
+
+Private functions:
+    None
+
+
+Private Classes:
+    None
+
+
+"""
+
 
 import server
     
