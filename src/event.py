@@ -82,17 +82,17 @@ class _Queue:
             None
             
         Public Methods:
-            add(self):
+            add(self, event):
                 Arguments: event object
                 Return Type: Nothing
                      Adds the event object to the master event list, as well as to the event list of the owner.
                      
-            remove(self):
+            remove(self, event):
                 Arguments: event object
                 Return Type: Nothing
                      Removes an event object from the master event list, as well as the event list of the owner.
                      
-            removePlayer(self):
+            removePlayer(self, player):
                 Arguments: player object
                 Return Type: Nothing
                     Iterates over all of a players events, and removes them from the master event list. Used when

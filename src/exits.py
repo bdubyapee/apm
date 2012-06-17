@@ -16,33 +16,91 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#
-# Filename: room.py
-# 
-# File Description: Module dealing with rooms specifically.
+
+"""Filename: exits.py
+ 
+File Description: This module houses the code to handle rooms.  This will be seperate from any code
+                  dealing with the 'wilderness' ASCII map.
+               
+                  
+Public variables:
+    None
+        
+
+Public functions:
+    None
+    
+
+Public classes:
+    Exit(olc.editable)
+            
+
+Private variables:
+    _directions -- a set that contains strings representing the various directions available.
+    _exitsizes -- a set that contains strings representing the exit sizes available.
+    _oppositedirections -- a dict that maps a direction key, with a value that is the opposite.
+    
+
+
+Private functions:
+    None
+
+
+Private classes:
+    None
+
+"""
 
 
 import olc
 import area
 import event
 
-directions = ('north', 'south', 'east', 'west', 'northwest', 'northeast',
-              'southwest', 'southeast', 'up', 'down')
+_directions = ('north', 'south', 'east', 'west', 'northwest', 'northeast',
+               'southwest', 'southeast', 'up', 'down')
 
-exitsizes = ('huge', 'large', 'medium', 'tiny')
+_exitsizes = ('huge', 'large', 'medium', 'tiny')
 
-oppositedirection = {'north': 'south',
-                     'south': 'north',
-                     'east': 'west',
-                     'west': 'east',
-                     'northwest': 'southeast',
-                     'northeast': 'southwest',
-                     'southwest': 'northeast',
-                     'southeast': 'northwest',
-                     'up': 'down',
-                     'down': 'up'}
+_oppositedirection = {'north': 'south',
+                      'south': 'north',
+                      'east': 'west',
+                      'west': 'east',
+                      'northwest': 'southeast',
+                      'northeast': 'southwest',
+                      'southwest': 'northeast',
+                      'southeast': 'northwest',
+                      'up': 'down',
+                      'down': 'up'}
 
 class Exit(olc.Editable):
+    """Exit(olc.Editable):           
+         NOTES:  The inheritance from olc.Editable provides our in-game manipulation interface.  The
+                 public methods exposed by this class are named and operate specifically to accommodate
+                 that modules needs.  Any "thing" that inherits from olc.Editable will have this interface
+                 and will therefor be editable in-game.
+
+        Arguments:
+            None
+            
+        Public Methods:
+            savedata(self):
+                Arguments: None
+                Return Type: a string
+                     Creates a string representation of the exit data for use in writing to file and returns it.
+                     
+            load(self, data):
+                Arguments: a string containing the exit data
+                Return Type: Nothing
+                     Takes a string argument, converts it's contents appropriatly and assigns the data to exit instance
+                     variables.
+                     
+            display(self):
+                Arguments: None
+                Return Type: str
+                    Returns a string representation of the exit data.
+
+                    
+    """
     def __init__(self, room, data=None):
         olc.Editable.__init__(self)
         self.room = room
@@ -62,7 +120,7 @@ class Exit(olc.Editable):
         self.keywords = []
         self.events = []
         event.init_events_exit(self)
-        self.commands = {'direction': ('string', directions),
+        self.commands = {'direction': ('string', _directions),
                          'destination': ('integer', None),
                          'locked': ('string', ['true', 'false']),
                          'lockdifficulty': ('integer', None),
@@ -72,7 +130,7 @@ class Exit(olc.Editable):
                          'magiclockdifficulty': ('integer', None),
                          'casterid': ('integer', None),
                          'magiclocktype': ('string', None),
-                         'size': ('string', exitsizes),
+                         'size': ('string', _exitsizes),
                          'hasdoor': ('string', ['true', 'false']),
                          'dooropen': ('string', ['true', 'false']),
                          'keywords': ('list', None)}
@@ -80,6 +138,22 @@ class Exit(olc.Editable):
             self.load(data)
 
     def savedata(self):
+        """ Converts all of the exit data for the instance into a string and returns it.
+            Used to provide save data that can be written to the area file.
+        
+        Keyword arguments:
+            None
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """
         thelist = [str(self.destination),
                    self.locked,
                    str(self.lockdifficulty),
@@ -97,6 +171,21 @@ class Exit(olc.Editable):
         return output
 
     def load(self, data):
+        """ Accepts a string type argument that is split up, and assigned to the exit instance.
+        
+        Keyword arguments:
+            data -- a string type providing exit data.
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """
         data = data.split()
         self.direction = data[0]
         self.destination = int(data[1])
@@ -114,6 +203,21 @@ class Exit(olc.Editable):
         self.keywords = data[13:]
 
     def display(self):
+        """ Create a string value that we can return to a caller function for use in the OLC.
+        
+        Keyword arguments:
+            None
+            
+        Return value:
+            return -- a 'str' object.
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """        
         retvalue = "{{WRoom{{x: {0}\n"\
                    "{{WDirection{{x: {1}\n"\
                    "{{WDestination{{x: {2}\n"\
