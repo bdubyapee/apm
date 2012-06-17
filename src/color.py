@@ -30,9 +30,13 @@ Public variables:
 
 
 Public functions:
-    colorize(string) : return string
+    colorize(text) : 
+        Accepts: text - string
+        Returns: string
     
-    decolorize(string) : return string
+    decolorize(text) : 
+        Accepts: text - string
+        Returns: string
 
 
 Public classes:

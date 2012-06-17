@@ -20,7 +20,7 @@
 """Filename: area.py
  
 File Description: Module handling area information.  Functionality is provided to load and save area files.
-                  Each Area instance inherits from teh olc module which allows in-game editing of the objects.
+                  Each Area instance inherits from the olc module which allows in-game editing of the objects.
                   We keep lists of areas, rooms, mobiles and game objects here.  These are index lists of master
                   object copies, we will need to implement seperate lists for 'in-game' mobiles and objects.
                   
@@ -48,7 +48,9 @@ Public variables:
 Public functions:
     init() : return nothing
     
-    roomByVnum(int) : return Room object or False
+    roomByVnum(vnum) : 
+        Accepts: vnum - int
+        Returns: Room object or False
 
 
 Public classes:
