@@ -49,8 +49,8 @@ Private Classes:
 """
 
 
-import server
+import apmserver
     
 if __name__ == "__main__":
-    game = server.Server()
+    game = apmserver.Server()
     game.run()

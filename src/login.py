@@ -34,7 +34,6 @@ import helpsys
 import races
 import world
 import player
-import server
 import livingthing
 import fileparser
 

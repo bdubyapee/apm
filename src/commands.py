@@ -40,7 +40,7 @@ import room
 import world
 import player
 import livingthing
-import server
+import apmserver
 
 commandhash = {}
 
@@ -57,31 +57,31 @@ def evaluator(compiledobject, themap={}):
 # giving them access to the objects themselves.  Shouldn't be too hard
 # as long as we think through what all they will need, and what they will
 # need to do it to.  XXX
-genericmaps = {'server':server,
-               'color':color,
-               'player':player,
-               'livingthing': livingthing,
-               'login':login,
-               'commandhash':commandhash,
-               'helpsys':helpsys,
-               'comm':comm,
-               'races':races,
-               'olc':olc,
-               'area':area,
-               'exits':exits,
-               'world':world,
-               'time': time,
-               'room':room,
-               'open': open,
-               'os': os,
-               'len':len,
-               'range': range,
-               'int': int,
-               'dir': dir,
-               'str': str,
-               'hasattr':hasattr,
-               'True':True,
-               'False':False}
+_genericmaps = {'server':apmserver,
+                'color':color,
+                'player':player,
+                'livingthing': livingthing,
+                'login':login,
+                'commandhash':commandhash,
+                'helpsys':helpsys,
+                'comm':comm,
+                'races':races,
+                'olc':olc,
+                'area':area,
+                'exits':exits,
+                'world':world,
+                'time': time,
+                'room':room,
+                'open': open,
+                'os': os,
+                'len':len,
+                'range': range,
+                'int': int,
+                'dir': dir,
+                'str': str,
+                'hasattr':hasattr,
+                'True':True,
+                'False':False}
 
 
 def init():
@@ -90,7 +90,7 @@ def init():
         newcommand = Command(eachcommand)
         commandhash[newcommand.name] = newcommand
 
-capabilities = ('player', 'builder', 'deity', 'admin')
+_capabilities = ('player', 'builder', 'deity', 'admin')
 
 class Command(olc.Editable):
     def __init__(self, path):
@@ -107,7 +107,7 @@ class Command(olc.Editable):
         self.skilllim = {}
         self.noview = False
         self.commands = {'name': ('string', None),
-                         'capability': ('string', capabilities),
+                         'capability': ('string', _capabilities),
                          'description': ('description', None),
                          'disabled': ('string', ['true', 'false']),
                          'racelim': ('list', None),
@@ -164,7 +164,7 @@ class Command(olc.Editable):
         if self.capability in caller.capability:
             if self.disabled == 'false':
                 localmaps = {}
-                localmaps.update(genericmaps)
+                localmaps.update(_genericmaps)
                 localmaps.update({'caller':caller})
                 localmaps.update({'args':args})
                 evaluator(self.compiled, localmaps)

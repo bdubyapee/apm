@@ -28,7 +28,7 @@ import os
 
 
 # homeDir is the root path, it should contain 'data' and 'src' directories.
-homeDir = 'c:\\apm'
+homeDir = 'c:\\Users\\bwp\\apm'
 
 # dataDir is the root path to all of the data files.  logs, help files, areas etc.  See below.
 dataDir = os.path.join(homeDir, 'data')
