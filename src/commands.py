@@ -16,11 +16,55 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#
-# Filename: commands.py
-# 
-# File Description: Commands module
 
+"""Filename: commands.py
+ 
+File Description: This module handles all in-game commands.  There are some important notes to take
+                  into consideration here.  All commands are stored as text files in the /data directory.
+                  Upon game startup each of the commands are read in and compiled into objects. THIS PRESENTS
+                  A SECURITY ISSUE.  My original thought is that admin characters are the only ones with
+                  access to modify these files in-game.  This means unless an admin/coder account is hacked
+                  or your host box is hacked there shouldn't be a security risk through the game.   Still,
+                  use this at your own risk.  
+                  
+                  The benefits however, are that you can modify a command in-game or offline and then reload the
+                  command without rebooting the game.  You can also enable or disable commands in-game without
+                  interrupting game play.
+               
+                  
+Public variables:
+    commandhash : dict
+        A hash containing a command name, key, and a compiled code object value.
+        
+
+Public functions:
+    init() : return nothing
+    
+    evaluator(compiledobject, themap={}) : 
+        Accepts: 
+            compiledobject - Compiled code object
+            themap - dict containing reference maps for the compiled code objects
+        Returns:
+            any results returned from the code object
+
+
+Public classes:
+    Command(olc.Editable)
+            
+
+Private variables:
+    _genericmaps -- dict object containing mappings used in the compiled code objects
+    _capabilities -- A set containing string values that represent the various character capabilities
+
+
+Private functions:
+    None
+
+
+Private classes:
+    None
+
+"""
 
 import os
 import glob
@@ -45,6 +89,23 @@ import apmserver
 commandhash = {}
 
 def evaluator(compiledobject, themap={}):
+    """ Accepts a compiled code object, and any references in a map to pass to the object.  It then executes
+        the code object and returns any results from its execution.
+    
+    Keyword arguments:
+        compiledobject  --  a compiled ocde object for execution(evaluation)
+        themap -- a dict containing additional reference mappings to pass to the object during evaluation.
+        
+    Return value:
+        Any returned value(s) or references passed back to the function from the code evaluation
+        
+        
+    Additional notes:
+        It should be noted that this function can be a potential security risk.  It is generally accepted that
+        there is no real, true way to use eval safely.  I have not performed any kind of security audit so
+        utilize this particular command system at your own risk.  To date there have been no issues. XXX
+        
+    """
     themap.update({'__builtins__':None})
     try:
         rv = eval(compiledobject, themap, {})
@@ -85,6 +146,20 @@ _genericmaps = {'server':apmserver,
 
 
 def init():
+    """ Uses the configuration variable world.commandDir to load each in-game command. It creates a command object
+        and stores the mapping in teh commandhash dict.
+    
+    Keyword arguments:
+        None
+        
+    Return value:
+        None
+        
+    Additional notes:
+        None
+        
+    """
+
     allcommands = glob.glob(world.commandDir + "\\*")
     for eachcommand in allcommands:
         newcommand = Command(eachcommand)
@@ -93,6 +168,41 @@ def init():
 _capabilities = ('player', 'builder', 'deity', 'admin')
 
 class Command(olc.Editable):
+    """Command(olc.Editable):
+        NOTES:  The inheritance from olc.Editable provides our in-game manipulation interface.  The
+                public methods exposed by this class are named and operate specifically to accommodate
+                that modules needs.  Any "thing" that inherits from olc.Editable will have this interface
+                and will therefor be editable in-game.
+                
+        Arguments:
+            Accepts a string value as argument providing an absolute path to the command file to load.
+            
+        Public Methods:
+            load(self):
+                Arguments: None
+                Return Type: Nothing
+                     Uses the isntance variable self.path, opens the text file and reads in the data.
+                     Assigns the instance variables from the command file and compiles the code itself
+                     into a code object for execution 'on the fly'.  Mapping for additional values is
+                     handled outside of the Class/Instance in the commands.py module.
+                     
+            save(self):
+                Arguments: None
+                Return Type: Nothing
+                     Uses instance variable self.path, opens a file for writing the command data to.
+                     
+            display(self):
+                Arguments: None
+                Return Type: str
+                    Returns a string representation of the command data.
+                    
+            call(self):
+                Arguments: 
+                    caller -- A player object instance (the person calling the command)
+                    args -- a string with any arguments passed to the command from the player.
+                Return Type: 
+                    
+    """
     def __init__(self, path):
         olc.Editable.__init__(self)
         self.path = path
@@ -118,6 +228,23 @@ class Command(olc.Editable):
             self.load()
 
     def load(self):
+        """ Uses self.path to get a file location to load the command data.  Loads the data, assigns instance
+            variables based on the data.  Compiles the code from from the file into a code object to be used
+            in eval() when the command is called.
+        
+        Keyword arguments:
+            None
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """
         dictinfo = flatFileParse(self.path)
         self.name = dictinfo['name']
         self.capability = dictinfo['capability']
@@ -134,6 +261,22 @@ class Command(olc.Editable):
             self.disabled = 'true'
 
     def save(self):
+        """ Opens the file associated with the location in self.path and writes the command header data
+            as well as the code to the command file.
+        
+        Keyword arguments:
+            None
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """
         with open(self.path, 'w') as thefile:
             thefile.write('name | {0}~\n'.format(self.name))
             thefile.write('capability | {0}~\n'.format(self.capability))
@@ -145,6 +288,21 @@ class Command(olc.Editable):
             thefile.write('noview | {0}~\n'.format(self.noview))
 
     def display(self):
+        """ Create a string value that we can return to a caller function for use in the OLC.
+        
+        Keyword arguments:
+            None
+            
+        Return value:
+            return -- a 'str' object.
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """        
         retvalue = "Name: {0}\n\r"\
                    "Capability: {1}\n\r"\
                    "Disabled: {2}\n\r"\
@@ -161,6 +319,26 @@ class Command(olc.Editable):
         return retvalue
 
     def call(self, caller, args):
+        """ Call a command.  We take the caller and any arguments as parameters.  We check that the caller
+            has the appropriate in-game permissions (capabilities) to execute the command.  We add in the
+            necessary pre-mapped references as well as references to the args and caller and then evaluate
+            the command, receiving any returned values back from the eval.
+        
+        Keyword arguments:
+            caller -- a Player object instance, used for permission check as well as passed to the command.
+            args -- a 'str' containing any arguments passed into the command.
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """        
+
         if self.capability in caller.capability:
             if self.disabled == 'false':
                 localmaps = {}
@@ -170,6 +348,5 @@ class Command(olc.Editable):
                 evaluator(self.compiled, localmaps)
             else:
                 caller.write("I'm sorry, that command is temporarily disabled.")
-                return
         else:
             caller.write("Huh?")

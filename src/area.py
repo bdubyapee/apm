@@ -143,7 +143,8 @@ class oneArea(olc.Editable):
     """oneArea(olc.Editable):
         NOTES:  The inheritance from olc.Editable provides our in-game manipulation interface.  The
                 public methods exposed by this class are named and operate specifically to accommodate
-                that modules needs.  Any "thing" that inherits from olc.Editable will have this interface.
+                that modules needs.  Any "thing" that inherits from olc.Editable will have this interface
+                and will therefor be editable in-game..
                 
         Arguments:
             Accepts a string value as argument providing an absolute path to the area file to load.
