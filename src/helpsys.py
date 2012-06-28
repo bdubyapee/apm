@@ -203,6 +203,7 @@ class oneHelp(olc.Editable):
         return retvalue
 
 helpfiles = {}
+conn = sqlite3.connect((os.path.join(world.dataDir, 'helps.sqlite')))
 
 def init():
     """ The initialization function for the helpsystem.  Glob a list of all helpfile file names
@@ -227,6 +228,7 @@ def init():
         thehelp = oneHelp(singlehelp)
         for keyword in thehelp.keywords:
             helpfiles[keyword] = thehelp
+    
 
 def reload():
     """ This is a cheater function used to reload all of the helpfiles.
@@ -269,6 +271,7 @@ def get_help(key, server=False):
         None
         
     """  
+
     key = key.lower()
     if key != '':
         if key in helpfiles:

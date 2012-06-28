@@ -19,7 +19,7 @@
 
 """Filename: apm.py
  
-File Description: Main 'startup' file for Another Python MUD (apm).
+File Description: Main 'startup' file for Another Python MUD (apm)
                
                   
 Public variables:

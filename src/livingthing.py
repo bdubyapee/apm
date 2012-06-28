@@ -16,11 +16,41 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#
-# Filename: livingthing.py
-# 
-# File Description: The livingthing module.  All living things inherit from this.
-#                   This includes mobiles and players.
+
+"""Filename: livingthing.py
+ 
+File Description: This module contains some sets and a class pertaining to any living 
+                  thing.
+               
+                  
+Public variables:
+    positions -- A set containing various positions a living thing could be in.
+    genders -- A set containing the available genders.
+    stat_types -- A set containing the various statistics types.
+    disciplines -- A set containing the disciplines available.
+
+
+Public functions:
+    None
+
+
+Public classes:
+    LivingThing
+            
+
+Private variables:
+    None
+
+
+Private functions:
+    None
+
+
+Private classes:
+    None
+
+"""
+
 
 
 import races
@@ -36,6 +66,34 @@ stat_types = ('strength', 'agility', 'speed', 'intelligence',
 disciplines = ('physical', 'mental', 'mystic', 'religious')
 
 class LivingThing:
+    """LivingThing:           
+        Arguments:
+            None
+            
+        Public Methods:
+            move(self, tospot=None, fromspot=None):
+                Arguments:
+                    tospot -- A location to move to
+                    fromspot -- A location to move from
+                Return Type: Nothing
+                    Moves the living thing from a location to another.
+                     
+            addKnown(self, idnum=None, name=None):
+                Arguments:
+                    idnum -- An integer (AID) idenfying another player.
+                    name -- A string representing what the player wants to refer to another player as.
+                Return Type: Nothing
+                     Adds an alias for this player so they can 'tag' a name for another player.
+                     
+            getKnown(self, idnum=None):
+                Arguments:
+                    idnum -- An integer representing another player (AID)
+                Return Type: str
+                    Returns an empty string if the player being looked up is unknown to this player or
+                    returns whatever string this player has stored as an alias for the player being looked up.
+
+                    
+    """
     def __init__(self):
         self.name = ''
         self.lastname = ''
@@ -97,6 +155,24 @@ class LivingThing:
 
     # Utility functions for living things.
     def move(self, tospot=None, fromspot=None):
+        """ Takes two arguments, tospot and fromspot, removes the thing from the fromspot and adds them
+            to the the tospot.
+        
+        Keyword arguments:
+            tospot -- A location to move to
+            fromspot -- A location to move from
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """ 
+
         if tospot == None:
             comm.wiznet("Received None value in move:livingthing.py")
             return
@@ -107,6 +183,23 @@ class LivingThing:
             self.location = tospot
             
     def addKnown(self, idnum=None, name=None):
+        """ Assigns a string alias for a particular players ID number.  (AID)
+        
+        Keyword arguments:
+            idnum -- Integer representing another living thing (player)
+            name -- A string to be used as an alias for this other player.
+            
+        Return value:
+            None
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """ 
+
         if idnum == None or name == None:
             comm.wiznet("You must provide id and name arguments.  addKnown:livingthing.py")
             return
@@ -114,6 +207,24 @@ class LivingThing:
             self.knownpeople[idnum] = name
 
     def getKnown(self, idnum=None):
+        """ Used to return a string for display.  You can assign a string alias for another players
+            ID number so you see that string instead of the default if you don't "know" them.
+        
+        Keyword arguments:
+            idnum -- Integer representing another player
+            
+        Return value:
+            A blank string if they don't have an alias set, or a string representing the alias for the other
+            player.
+            
+        Example:
+            None
+            
+        Additional notes:
+            None
+            
+        """ 
+
         if id == None:
             comm.wiznet("You must provide an ID to lookup. getKnown:livingthing.py")
             return
